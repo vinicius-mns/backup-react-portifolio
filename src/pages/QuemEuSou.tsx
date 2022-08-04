@@ -8,7 +8,7 @@ export default function QuemSouEu() {
   return(
     <div className='box displayFlex'>
       <div className='circle blur'>
-          <img src={image} alt={desc} />
+          <img className='avatar' src={image} alt={desc} />
       </div>
       <div className='text blur'>
           <p>{sobre}</p>
