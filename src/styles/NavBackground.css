@@ -1,0 +1,44 @@
+.navBackground {
+  position: fixed;
+  margin-top: 4.2vh;
+  width: 31%;
+  margin-left: 1%;
+  border-radius: 5px;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav {
+  perspective: 70px;
+  perspective-origin: 0 45vh;
+}
+
+.itemOption {
+  border-radius: 5px;
+  border: none;
+  height: 10%;
+  width: 92%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.itemOption:hover {
+  background-color: rgba(255, 255, 255, 0.52);
+}
+
+.itemOption:active {
+  background-color: transparent;
+}
+
+.container {
+  height: 80%;
+  width: 90%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
