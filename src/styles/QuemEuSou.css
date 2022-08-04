@@ -1,0 +1,25 @@
+.box {
+  width: 100%;
+  height: 100vh;
+  justify-content: start;
+}
+
+.circle {
+  margin-top: 70px;
+  width: 163px;
+  height: 160px;
+  border-radius: 50%;
+}
+
+.text {
+  margin-top: 10%;
+  padding: 40px;
+  border-radius: 5px;
+  width: 50%;
+}
+
+.avatar {
+  width: 200px;
+  margin-left: -18px;
+  margin-top: -50px;
+}
