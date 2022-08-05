@@ -1,13 +1,17 @@
 .navBackground {
   position: fixed;
-  margin-top: 4.2vh;
   width: 31%;
   margin-left: 1%;
+  opacity: 40%;
+  margin-top: 10%;
   border-radius: 5px;
   height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  animation: iniciarBackround 0.5s;
+  animation-fill-mode: forwards;
 }
 
 .nav {
@@ -41,4 +45,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+}
+
+@keyframes iniciarBackround {
+  to {
+    margin-top: 4.2vh;
+    opacity: 100%;
+  }
 }
