@@ -1,4 +1,4 @@
-import image from '../midia/avatar.png'
+import image from '../midia/avatarg.gif'
 import '../styles/QuemEuSou.css'
 
 export default function QuemSouEu() {
