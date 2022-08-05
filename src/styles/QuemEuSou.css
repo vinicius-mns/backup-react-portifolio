@@ -5,10 +5,17 @@
 }
 
 .circle {
-  margin-top: 70px;
-  width: 163px;
-  height: 160px;
+  margin-top: 3%;
+  width: 240px;
+  height: 240px;
   border-radius: 50%;
+  overflow: hidden;
+  margin-left: -20%;
+
+  opacity: 30%;
+  animation-name: iniciarCircle;
+  animation-fill-mode: forwards;
+  animation-duration: 0.5s;
 }
 
 .text {
@@ -19,7 +26,25 @@
 }
 
 .avatar {
-  width: 200px;
-  margin-left: -18px;
-  margin-top: -50px;
+  width: 260px;
+  opacity: 40%;
+  margin-left: -50px;
+
+  animation-name: iniciarAvatar;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes iniciarAvatar {
+  to {
+    margin-left: 0;
+    opacity: 100%;
+  }
+}
+
+@keyframes iniciarCircle {
+  to {
+    margin-left: 0;
+    opacity: 100%;
+  }
 }
