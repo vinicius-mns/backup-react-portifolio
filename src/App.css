@@ -11,18 +11,19 @@
 }
 
 body {
-  background-image: url('./midia/bac.jpg');
-  background-color: #afdcc8;
+  /* background-image: url('./midia/bac.jpg'); */
+  /* background-color: #afdcc8; */
+  background-color: rgb(157, 191, 189);
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat, repeat;
 }
 
-.blur {
+/* .blur {
   -webkit-backdrop-filter: blur(70px);
   backdrop-filter: blur(70px);
   background-color: rgba(255, 255, 255, 0.259);
-}
+} */
 
 h3 {
   font-weight: 100;
@@ -32,4 +33,8 @@ h3 {
 p {
   font-weight: 300;
   font-size: 15px;
+}
+
+h1 {
+  font-weight: 100;
 }

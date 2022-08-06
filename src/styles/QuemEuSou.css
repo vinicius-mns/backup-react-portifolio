@@ -4,13 +4,14 @@
   justify-content: start;
 }
 
-.circle {
-  margin-top: 3%;
-  width: 240px;
-  height: 240px;
-  border-radius: 50%;
+.quadro {
+  width: 60%;
+  height: 190px;
+  
   overflow: hidden;
   margin-left: -20%;
+
+  background-color: rgb(250, 250, 250);
 
   opacity: 30%;
   animation-name: iniciarCircle;
@@ -18,17 +19,21 @@
   animation-duration: 0.5s;
 }
 
+.box h1 {
+  align-self: flex-start;
+  margin-left: 23%;
+  font-size: 70px;
+}
+
 .text {
-  margin-top: 10%;
-  padding: 40px;
+  margin-top: 5%;
   border-radius: 5px;
   width: 50%;
 }
 
 .avatar {
-  width: 260px;
+  width: 220px;
   opacity: 40%;
-  margin-left: -50px;
 
   animation-name: iniciarAvatar;
   animation-duration: 0.5s;
@@ -37,7 +42,8 @@
 
 @keyframes iniciarAvatar {
   to {
-    margin-left: 0;
+    margin-top: -1px;
+    margin-left: 50%;
     opacity: 100%;
   }
 }

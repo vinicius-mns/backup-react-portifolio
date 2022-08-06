@@ -1,8 +1,9 @@
 .page {
-  width: 68%;
-  margin-left: 32%;
-  height: 100vh;
-
+  position: absolute;
+  margin-top: 1.2vh;
+  width: 72.8%;
+  margin-left: 26.6%;
+  height: 97.6vh;
   display: flex;
   flex-direction: column;
   align-items: center;
