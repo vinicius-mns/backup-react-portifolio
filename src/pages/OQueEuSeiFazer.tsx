@@ -1,9 +1,16 @@
 import '../styles/OQueEuSeiFazer.css'
+import image from '../midia/apontando.gif'
 
 export default function OQueEuSei() {
   return (
     <div className="OQueEuSei">
       <div className="lado">
+        <div className='xx'>
+          <img src={image} alt="eu" />
+        </div>
+        <h1>Algo Aqui</h1>
+        <div className='yy'>
+        </div>
       </div>
       <div className="lado">
         <a className='certificado' 
