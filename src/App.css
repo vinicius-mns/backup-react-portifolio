@@ -1,4 +1,5 @@
 * {
+  font-family: 'Red Hat Display', BlinkMacSystemFont, 'Segoe UI';
   margin: 0;
   padding: 0;
 }
@@ -31,6 +32,15 @@ p {
 
 h1 {
   font-weight: 100;
+}
+
+h2 {
+  font-weight: 100;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 ::-webkit-scrollbar {
