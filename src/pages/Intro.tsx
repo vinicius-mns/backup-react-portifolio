@@ -2,8 +2,8 @@ import image from '../midia/saudacao.gif'
 
 export default function Intro() {
   return(
-    <div className='intro blur'>
-      <div className='circle blur'>
+    <div className='intro'>
+      <div className='circle'>
           <img className='avatar' src={image} alt='boneco modelo 3d' />
       </div>
       <div>

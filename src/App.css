@@ -19,12 +19,6 @@ body {
   background-repeat: no-repeat, repeat;
 }
 
-/* .blur {
-  -webkit-backdrop-filter: blur(70px);
-  backdrop-filter: blur(70px);
-  background-color: rgba(255, 255, 255, 0.259);
-} */
-
 h3 {
   font-weight: 100;
   font-size: 15px;

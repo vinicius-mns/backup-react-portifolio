@@ -15,7 +15,7 @@ export default function NavBackground(){
   const sei = () => navigateTo(setSei, [ setEu, setQuero, setProjetos, setNaoSei, setIntro ])
 
   return(
-    <div className='navBackground blur' >
+    <div className='navBackground' >
       <nav className='container'>
         <ItemOption text='Quem eu Sou eu' click={ eu }/>
         <ItemOption text='O que eu quero' click={ quero }/>
