@@ -6,7 +6,7 @@
 
 .quadro {
   width: 60%;
-  height: 190px;
+  height: 28%;
   
   overflow: hidden;
   margin-left: -20%;
@@ -32,7 +32,7 @@
 }
 
 .avatar {
-  width: 220px;
+  width: 38%;
   opacity: 40%;
 
   animation-name: iniciarAvatar;
