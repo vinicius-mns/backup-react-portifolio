@@ -10,7 +10,8 @@ export default function QuemSouEu() {
       <div className='quadro'>
           <img className='avatar' src={image} alt={desc} />
       </div>
-      <div className='text blur'>
+        <h1>V i n í c i u s</h1>
+      <div className='text'>
           <p>{sobre}</p>
     </div>
   </div>
