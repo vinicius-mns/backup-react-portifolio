@@ -1,15 +1,16 @@
 import image from '../midia/saudacao.gif'
+import '../styles/intro.css'
 
 export default function Intro() {
   return(
     <div className='intro'>
-      <div className='circle'>
-          <img className='avatar' src={image} alt='boneco modelo 3d' />
+      <div className='quadrox displayFlex'>
+        <img className='avatarx' src={image} alt='boneco modelo 3d' />
       </div>
-      <div>
-        <h2>Olá, me chamo <strong>Vinicius</strong>. Seja bem vindo ao meu portifolio</h2>
-        <p>Ali ao lado tem uma barra de navegação, use ela para me conhecer melhor</p>
-        <p>{'<<<<<<<<<<<<'}</p>
+      <div className='introx'>
+        <h1>B e m   V i n d o</h1>
+        <p>Ola, Eu me chamo vinicius e este é meu portifolio.</p>
+        <p>Fique a vontada para usar a barra leteral para me conhcer melhor</p>
       </div>
     </div>
   )
