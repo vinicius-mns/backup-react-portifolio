@@ -1,0 +1,64 @@
+.OQueEuSei {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.OQueEuSei .lado {
+  width: 50%;
+  height: 100%;
+  color: white;
+
+  overflow-y: scroll;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lado h1 {
+  color: black;
+}
+
+.lado p {
+  color: black;
+  margin: 1%;
+}
+
+.certificado {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+  background-color: transparent;
+  margin-bottom: 8%;
+  width: 80%;
+}
+
+.certificado img {
+  width: 100%;
+}
+
+.xx {
+  margin-top: 9.5%;
+  width: 100%;
+  height: 34.6%;
+  background-color: white;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.xx img {
+  margin-top: 9%;
+  width: 60%;
+}
+
+.yy {
+  height: 26%;
+  /* overflow-y: scroll; */
+}
