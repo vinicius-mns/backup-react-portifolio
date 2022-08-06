@@ -1,0 +1,47 @@
+.intro {
+  background-color: rgb(251, 251, 251);
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+
+  z-index: 200;
+  width: 60%;
+  height: 95%;
+
+  margin-left: -28%;
+
+  animation: apresentacao 2s;
+  animation-delay: 4.2s;
+  animation-fill-mode: forwards;
+}
+
+.introx {
+  margin-top: 2%;
+}
+
+.introx p {
+  margin-top: 5%;
+}
+
+.intro h1 {
+  font-size: 50px;
+}
+
+.quadrox {
+  width: 100%;
+  height: 60%;
+  overflow: hidden;
+}
+
+.avatarx {
+  margin-top: 7%;
+  width: 76%;
+  opacity: 100%;
+}
+
+@keyframes apresentacao {
+  to {
+    margin-left: 0;
+  }
+}
