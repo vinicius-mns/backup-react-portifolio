@@ -7,7 +7,7 @@ export default function QuemSouEu() {
   Curioso desde criança, quebrava todos os meus brinquedos para ver como funcionavam, hoje não quebro mais nada, porém ainda curioso. Programação era o meu destino e eu não sabia. Eu queria ser inventor, e inventar coisa nova é o que eu mais faço`
   return(
     <div className='box displayFlex'>
-      <div className='circle blur'>
+      <div className='quadro'>
           <img className='avatar' src={image} alt={desc} />
       </div>
       <div className='text blur'>
