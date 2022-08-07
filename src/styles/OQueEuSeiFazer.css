@@ -6,7 +6,7 @@
   margin-left: -5%;
   opacity: 10%;
   justify-content: center;
-  animation: introContainer 0.5s ease forwards;
+  animation: introContainer_oqs 0.5s ease forwards;
 }
 
 /* Container onde contem todo conteudo da pagina  */
@@ -27,15 +27,20 @@
 
 .card_img img {
   height: 120%;
+  opacity: 10%;
+  margin-left: -50%;
+  animation: introImg_oqs 0.5s ease forwards;
 }
 
 .card_img::before {
+  z-index: 400;
   content: '';
   width: 100px;
   background-color: white;
   height: 100%;
   position: relative;
-  left: 1%;
+  left: -60%;
+  animation: barraBrancaParaCorrigirImg 0.5s ease forwards;
 }
 
 .card_img::after {
@@ -64,9 +69,22 @@
 }
 
 /* Animacao css */
-@keyframes introContainer {
+@keyframes introContainer_oqs {
   to {
     margin-left: 5%;
     opacity: 100%;
+  }
+}
+
+@keyframes introImg_oqs {
+  to {
+    opacity: 100%;
+    margin-left: 0;
+  }
+}
+
+@keyframes barraBrancaParaCorrigirImg {
+  to{
+    left: 1%;
   }
 }
