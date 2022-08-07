@@ -27,8 +27,26 @@
 
 .card_img img {
   height: 120%;
-  margin-left: 40%;
 }
+
+.card_img::before {
+  content: '';
+  width: 100px;
+  background-color: white;
+  height: 100%;
+  position: relative;
+  left: 1%;
+}
+
+.card_img::after {
+  content: '';
+  width: 100px;
+  background-color: white;
+  height: 100%;
+  position: relative;
+  left: -1%;
+}
+
 
 /* Container onde fica os certificados */
 .container_certificate {
