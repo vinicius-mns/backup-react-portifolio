@@ -1,10 +1,11 @@
 import '../styles/OQueEuSeiFazer.css'
+import { certificados } from '../conteudos/OQueEuSei'
 import image from '../midia/apontando.gif'
 
 export default function OQueEuSei() {
   return (
     <div className="container_oqs">
-      <div className="side a">
+      <div className="container_info_oqs">
         <div className='card_img'>
           <img src={image} alt="eu" />
         </div>
@@ -37,7 +38,7 @@ export default function OQueEuSei() {
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum quo explicabo ab corporis maxime? Ut a provident blanditiis perferendis temporibus dicta! Eos suscipit aliquid voluptatum illo recusandae totam expedita dolorem?</p>
         </div>
       </div>
-      <div className="side">
+      <div className="container_certificate">
         { certificados.map( ( { titulo, link, img } ) => (
           <a className='certificate' 
             href={link}
