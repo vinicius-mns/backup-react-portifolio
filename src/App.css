@@ -12,8 +12,6 @@
 }
 
 body {
-  /* background-image: url('./midia/bac.jpg'); */
-  /* background-color: #afdcc8; */
   background-color: rgb(157, 191, 189);
   background-position: center;
   background-size: 100%;
@@ -45,12 +43,4 @@ a {
 
 ::-webkit-scrollbar {
   width: 2px;
-}
-
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-::-webkit-scrollbar-thumb{
-  background: rgba(0, 0, 0, 0.405);
 }
