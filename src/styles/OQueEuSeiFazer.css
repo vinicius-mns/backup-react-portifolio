@@ -1,3 +1,4 @@
+/* Container geral da pagina */
 .container_oqs {
   width: 90%;
   align-self: flex-start;
@@ -7,24 +8,12 @@
   justify-content: center;
 }
 
-.container_certificate {
-  font-size: 25px;
-  position: fixed;
-  overflow-y: scroll;
-  opacity: 50%;
-  top: 0;
-  left: 95%;
-  height: 100%;
-}
-
-.container_certificate img {
-  margin-bottom: 30px;
-}
-
+/* Container onde contem todo conteudo da pagina  */
 .container_info_oqs {
   width: 75%;
 }
 
+/* bQuadro onde fica a imagem do avagatar */
 .card_img {
   background-color: white;
   width: 100%;
@@ -38,4 +27,19 @@
 .card_img img {
   height: 120%;
   margin-left: 40%;
+}
+
+/* Container onde fica os certificados */
+.container_certificate {
+  font-size: 25px;
+  position: fixed;
+  overflow-y: scroll;
+  opacity: 50%;
+  top: 0;
+  left: 95%;
+  height: 100%;
+}
+
+.container_certificate img {
+  margin-bottom: 30px;
 }
