@@ -1,90 +1,41 @@
 .container_oqs {
-  width: 100%;
-  height: 100%;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-
-  margin-left: 50%;
-
-  animation: introOQueEuSei 2s;
-  animation-delay: 8.5s;
-  animation-fill-mode: forwards;
-}
-
-.container_oqs .side {
-  width: 50%;
-  height: 100%;
-  color: white;
-
-  overflow-y: scroll;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.side h1 {
-  color: black;
-}
-
-.side p {
-  color: black;
-  margin: 1%;
-}
-
-.certificate {
-  border: none;
-  display: flex;
-  flex-direction: column;
-  font-size: 25px;
-  background-color: transparent;
-  margin-bottom: 8%;
   width: 90%;
-  margin-left: 100%;
-  opacity: 0%;
+  align-self: flex-start;
+  margin-left: 5%;
 
-  animation: introCertificados 2s;
-  animation-delay: 8s;
-  animation-fill-mode: forwards;
+  display: flex;
+  justify-content: center;
 }
 
-.certificate img {
-  width: 100%;
+.container_certificate {
+  font-size: 25px;
+  position: fixed;
+  overflow-y: scroll;
+  opacity: 50%;
+  top: 0;
+  left: 95%;
+  height: 100%;
+}
+
+.container_certificate img {
+  margin-bottom: 30px;
+}
+
+.container_info_oqs {
+  width: 75%;
 }
 
 .card_img {
-  margin-top: 9.5%;
-  width: 100%;
-  height: 34.6%;
   background-color: white;
+  width: 100%;
+  height: 27vh;
   overflow: hidden;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-
-  animation: some 3s;
-  animation-delay: 4s;
-  animation-fill-mode: forwards;
-}
-
-.a {
-  margin-top: 14%;
-  opacity: 10%;
-
-  animation: introA 0.3s;
-  animation-fill-mode: forwards;
 }
 
 .card_img img {
-  margin-top: 49%;
-  width: 60%;
-  opacity: 10%;
-  animation: introAvatar 0.5s;
-  animation-fill-mode: forwards;
-}
-
-.sub_container_oqs {
-  height: 26%;
+  height: 120%;
+  margin-left: 40%;
 }
