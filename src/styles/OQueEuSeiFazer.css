@@ -2,10 +2,11 @@
 .container_oqs {
   width: 90%;
   align-self: flex-start;
-  margin-left: 5%;
-
   display: flex;
+  margin-left: -5%;
+  opacity: 10%;
   justify-content: center;
+  animation: introContainer 0.5s ease forwards;
 }
 
 /* Container onde contem todo conteudo da pagina  */
@@ -42,4 +43,12 @@
 
 .container_certificate img {
   margin-bottom: 30px;
+}
+
+/* Animacao css */
+@keyframes introContainer {
+  to {
+    margin-left: 5%;
+    opacity: 100%;
+  }
 }
