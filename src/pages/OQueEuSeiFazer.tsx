@@ -5,6 +5,7 @@ import { useState } from 'react'
 
 export default function OQueEuSei() {
   const [x, xx] = useState('container_certificate')
+  const [c, cc] = useState('invisible')
 
   return (
     <div className="container_oqs">
@@ -41,7 +42,7 @@ export default function OQueEuSei() {
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum quo explicabo ab corporis maxime? Ut a provident blanditiis perferendis temporibus dicta! Eos suscipit aliquid voluptatum illo recusandae totam expedita dolorem?</p>
         </div>
       </div>
-      <div className={x} onMouseOver={() => xx('show')} onMouseLeave={() => xx('container_certificate')}>
+      <div className={x} onMouseOver={() => {xx('show'); cc('close_b_certificate')}} >
         { certificados.map( ( { titulo, link, img } ) => (
           <a className='certificate'
             href={link}
@@ -54,6 +55,16 @@ export default function OQueEuSei() {
             />
           </a>
         ) ) }
+        <button 
+          className={c}
+            onClick={ () => {
+              xx('container_certificate');
+              cc('invisible')
+              }
+            }
+        >
+          X
+        </button>
       </div>
     </div>
   )

@@ -97,6 +97,25 @@
   animation: introBlur 0.5s ease forwards;
 }
 
+.close_b_certificate {
+  top: 0;
+  right: 9.6%;
+  z-index: 500;
+  position: fixed;
+  border: none;
+  color: white;
+  width: 40px;
+  height: 40px;
+  font-size: 40px;
+  margin-top: 4.5%;
+  background-color: transparent;
+}
+
+.invisible {
+  visibility: hidden;
+  z-index: 0;
+}
+
 /* Animacao css */
 @keyframes introContainer_oqs {
   to {
