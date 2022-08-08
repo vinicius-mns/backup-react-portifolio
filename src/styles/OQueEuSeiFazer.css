@@ -60,9 +60,9 @@
   overflow-y: scroll;
   opacity: 80%;
   top: 0;
-  left: 80%;
+  left: 75%;
   height: 100%;
-  animation: introCertificado 0.5s 0.1s ease forwards;
+  animation: introCertificado 1s ease forwards;
 }
 
 .container_certificate img {
@@ -78,7 +78,7 @@
   left: 55%;
   opacity: 20%;
   height: 100%;
-  animation: introShow 0.5s 0.1s ease forwards;
+  animation: introShow 0.5s ease forwards;
 }
 
 .show h2 {
@@ -119,13 +119,9 @@
 }
 
 @keyframes introCertificado {
-  50% {
-    left: 90%;
-    opacity: 50%;
-  }
   to {
-    left: 90%;
-    opacity: 2%;
+    left: 98%;
+    opacity: 50%;
   }
 }
 
