@@ -1,8 +1,11 @@
 import '../styles/OQueEuSeiFazer.css'
 import { certificados } from '../conteudos/OQueEuSei'
-import image from '../midia/apontando.gif'
+import image from '../midia/avatarg.gif'
+import { useState } from 'react'
 
 export default function OQueEuSei() {
+  const [x, xx] = useState('container_certificate')
+
   return (
     <div className="container_oqs">
       <div className="container_info_oqs">
@@ -38,9 +41,9 @@ export default function OQueEuSei() {
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum quo explicabo ab corporis maxime? Ut a provident blanditiis perferendis temporibus dicta! Eos suscipit aliquid voluptatum illo recusandae totam expedita dolorem?</p>
         </div>
       </div>
-      <div className="container_certificate">
+      <div className={x} onMouseOver={() => xx('show')} onMouseLeave={() => xx('container_certificate')}>
         { certificados.map( ( { titulo, link, img } ) => (
-          <a className='certificate' 
+          <a className='certificate'
             href={link}
             target='blank'
             >

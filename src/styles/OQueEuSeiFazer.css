@@ -69,6 +69,34 @@
   margin-bottom: 30px;
 }
 
+.show {
+  z-index: 410;
+  font-size: 25px;
+  position: fixed;
+  overflow-y: scroll;
+  top: 0;
+  left: 55%;
+  opacity: 20%;
+  height: 100%;
+  animation: introShow 0.5s 0.1s ease forwards;
+}
+
+.show h2 {
+  margin-top: 10%;
+  color: white;
+}
+
+.show::before {
+  right: 0;
+  position: fixed;
+  content: '';
+  z-index: -1;
+  width: 76%;
+  height: 100vh;
+
+  animation: introBlur 0.5s ease forwards;
+}
+
 /* Animacao css */
 @keyframes introContainer_oqs {
   to {
@@ -91,12 +119,27 @@
 }
 
 @keyframes introCertificado {
-  /* 50% {
+  50% {
     left: 90%;
     opacity: 50%;
-  } */
+  }
   to {
     left: 90%;
     opacity: 2%;
+  }
+}
+
+@keyframes introShow {
+  to {
+    opacity: 100%;
+    left: 41%;
+  }
+}
+
+@keyframes introBlur {
+  to {
+    -webkit-backdrop-filter: blur(70px);
+    backdrop-filter: blur(70px);
+    background-color: rgba(24, 24, 24, 0.734);
   }
 }
