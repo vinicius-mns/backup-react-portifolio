@@ -26,10 +26,10 @@
 }
 
 .card_img img {
-  height: 120%;
+  height: 150%;
   opacity: 10%;
   margin-left: -50%;
-  animation: introImg_oqs 0.5s ease forwards;
+  animation: introImg_oqs 15s ease forwards;
 }
 
 /* Container onde fica os certificados */
@@ -104,9 +104,14 @@
 }
 
 @keyframes introImg_oqs {
-  to {
+  3% {
     opacity: 100%;
-    margin-left: 0;
+    margin-left: 25%;
+  }
+  100% {
+    opacity: 100%;
+    margin-left: 25%;
+    height: 170%;
   }
 }
 

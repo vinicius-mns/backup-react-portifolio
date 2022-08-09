@@ -1,6 +1,6 @@
 import '../styles/OQueEuSeiFazer.css'
 import { certificados } from '../conteudos/OQueEuSei'
-import image from '../midia/avatarg.gif'
+import image from '../midia/eu_teclando.gif'
 import { useState } from 'react'
 
 export default function OQueEuSei() {
