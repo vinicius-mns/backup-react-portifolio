@@ -32,37 +32,16 @@
   animation: introImg_oqs 0.5s ease forwards;
 }
 
-.card_img::before {
-  z-index: 400;
-  content: '';
-  width: 100px;
-  background-color: white;
-  height: 100%;
-  position: relative;
-  left: -60%;
-  animation: barraBrancaParaCorrigirImg 0.5s ease forwards;
-}
-
-.card_img::after {
-  content: '';
-  width: 100px;
-  background-color: white;
-  height: 100%;
-  position: relative;
-  left: -1%;
-}
-
-
 /* Container onde fica os certificados */
 .container_certificate {
   font-size: 25px;
   position: fixed;
   overflow-y: scroll;
-  opacity: 80%;
+  opacity: 100%;
   top: 0;
-  left: 75%;
+  left: 100%;
   height: 100%;
-  animation: introCertificado 1s ease forwards;
+  animation: introCertificado 0.5s 0.5s ease forwards;
 }
 
 .container_certificate img {
@@ -128,12 +107,6 @@
   to {
     opacity: 100%;
     margin-left: 0;
-  }
-}
-
-@keyframes barraBrancaParaCorrigirImg {
-  to{
-    left: 1%;
   }
 }
 

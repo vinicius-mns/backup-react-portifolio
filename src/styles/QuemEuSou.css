@@ -11,31 +11,12 @@
   overflow: hidden;
   margin-left: -20%;
 
-  background-color: rgb(255, 255, 255);
+  background-color: white;
 
   opacity: 30%;
   animation-name: iniciarCircle;
   animation-fill-mode: forwards;
   animation-duration: 0.5s;
-}
-
-.quadro::before {
-  z-index: 100;
-  position: fixed;
-  content: '';
-  width: 23%;
-  height: 27.3%;
-  background-color: white;
-}
-
-.quadro::after {
-  z-index: 100;
-  position: fixed;
-  margin-left: -1%;
-  content: '';
-  width: 3%;
-  height: 27.3%;
-  background-color: white;
 }
 
 .box h1 {
