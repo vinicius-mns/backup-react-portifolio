@@ -21,8 +21,8 @@ export default function NavBackground(){
     <div className='navBackground' >
       <nav className='container'>
         <ItemOption text='Quem eu Sou eu' click={ eu } active={e}/>
-        <ItemOption text='O que eu quero' click={ quero } active={q}/>
         <ItemOption text='O que eu sei fazer' click={ sei } active={s}/>
+        <ItemOption text='O que eu quero' click={ quero } active={q}/>
         <ItemOption text='O que eu não sei fazer' click={ naoSei } active={n}/>
         <ItemOption text='Meus projetos' click={ projetos } active={p}/>
         <ItemOption text='Porque do portifolio ser assim'/>

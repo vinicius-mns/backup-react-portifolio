@@ -9,7 +9,7 @@ import MeusProjetos from './pages/MeusProjetos';
 import OQueEuNaoSei from './pages/OQueEuNaoSei';
 import OQueEuQuero from './pages/OQueEuQuero';
 import QuemEuSou from './pages/QuemEuSou';
-import OQueEuSei from './pages/OQueEuSeiFazer';
+import OQueEuSei from './pages/OQueEuSei';
 import Intro from './pages/Intro';
 
 function App() {

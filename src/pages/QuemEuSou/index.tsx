@@ -1,5 +1,5 @@
-import image from '../midia/avatarg.gif'
-import '../styles/QuemEuSou.css'
+import image from '../../midia/avatarg.gif'
+import './style.css'
 
 export default function QuemSouEu() {
   const desc = 'um modelo humanoide 3d respresentando o autor do portifolio'
