@@ -1,6 +1,5 @@
 import './style.css'
-import { certificados } from '../../conteudos/OQueEuSei'
-import image from '../../midia/eu_teclando.gif'
+import { certificados, image } from './content'
 import { useState } from 'react'
 
 export default function OQueEuSei() {
@@ -14,32 +13,6 @@ export default function OQueEuSei() {
           <img src={image} alt="eu" />
         </div>
         <div className='sub_container_oqs'>
-          <h1>Competencias</h1>
-          <p>Eu sou incompetente em tudossssssssssssssssssssssssssssssssssssss</p>
-          <br />
-          <h1>Mais alguma coisa</h1>
-          <p>Outro texo taqui dfffffffffffffffffffffffffffffffffffffff</p>
-          <br />
-          <h1>Outro</h1>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum quo explicabo ab corporis maxime? Ut a provident blanditiis perferendis temporibus dicta! Eos suscipit aliquid voluptatum illo recusandae totam expedita dolorem?</p>
-          <br />
-          <h1>Outro</h1>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum quo explicabo ab corporis maxime? Ut a provident blanditiis perferendis temporibus dicta! Eos suscipit aliquid voluptatum illo recusandae totam expedita dolorem?</p>
-          <br />
-          <h1>Outro</h1>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum quo explicabo ab corporis maxime? Ut a provident blanditiis perferendis temporibus dicta! Eos suscipit aliquid voluptatum illo recusandae totam expedita dolorem?</p>
-          <br />
-          <h1>Outro</h1>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum quo explicabo ab corporis maxime? Ut a provident blanditiis perferendis temporibus dicta! Eos suscipit aliquid voluptatum illo recusandae totam expedita dolorem?</p>
-          <br />
-          <h1>Outro</h1>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum quo explicabo ab corporis maxime? Ut a provident blanditiis perferendis temporibus dicta! Eos suscipit aliquid voluptatum illo recusandae totam expedita dolorem?</p>
-          <br />
-          <h1>Outro</h1>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum quo explicabo ab corporis maxime? Ut a provident blanditiis perferendis temporibus dicta! Eos suscipit aliquid voluptatum illo recusandae totam expedita dolorem?</p>
-          <br />
-          <h1>Outro</h1>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum quo explicabo ab corporis maxime? Ut a provident blanditiis perferendis temporibus dicta! Eos suscipit aliquid voluptatum illo recusandae totam expedita dolorem?</p>
         </div>
       </div>
       <div className={x} onMouseOver={() => {xx('show'); cc('close_b_certificate')}} >

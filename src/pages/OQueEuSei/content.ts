@@ -1,3 +1,5 @@
+import image from '../../midia/eu_teclando.gif'
+
 const certificados = [
   {
     titulo: 'Fundamentos',
@@ -18,4 +20,5 @@ const certificados = [
 
 export {
   certificados,
+  image
 }
