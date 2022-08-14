@@ -32,6 +32,9 @@
   margin-top: 1%;
   margin-bottom: 5%;
   width: 55%;
+  margin-left: -40%;
+  opacity: 0%;
+  animation: iniciar_text 0.5s 0.1s 1 forwards;
 }
 
 .text p {
@@ -58,5 +61,12 @@
   to {
     margin-left: 0;
     opacity: 100%;
+  }
+}
+
+@keyframes iniciar_text {
+  to {
+    opacity: 100%;
+    margin-left: 0;
   }
 }
