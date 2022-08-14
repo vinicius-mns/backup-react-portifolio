@@ -22,14 +22,11 @@
   align-items: flex-start;
 }
 
-.box h1 {
-  align-self: flex-start;
-  margin-left: 23%;
+.text h1 {
   font-size: 70px;
 }
 
 .text {
-  margin-top: 1%;
   margin-bottom: 5%;
   width: 55%;
   margin-left: -40%;
