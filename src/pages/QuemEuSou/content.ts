@@ -1,5 +1,3 @@
-import image from '../../midia/avatarg.gif'
-
 const year = new Date().getMonth() < 11
   ? new Date().getFullYear() - 1998 - 1
   : new Date().getFullYear() - 1998
@@ -23,7 +21,6 @@ const i_am = [im1, im2, im3, im4, im5, im6, ]
 export {
   img_description,
   i_am,
-  image,
 }
 
 console.log(year)

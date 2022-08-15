@@ -9,7 +9,7 @@ export default function NavBackground(){
   return(
     <div className='navBackground' >
       <nav className='container'>
-        <ItemOption text='Quem eu Sou eu' click={ () => navigate(myPath.quemSou) } />
+        <ItemOption text='Quem Sou eu' click={ () => navigate(myPath.quemSou) } />
         <ItemOption text='O que eu sei fazer' click={ () => navigate(myPath.oQueSei) } />
         <ItemOption text='O que eu quero' />
         <ItemOption text='O que eu não sei fazer'  />
