@@ -1,0 +1,26 @@
+.inIntro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 25%;
+  margin-top: 10%;
+}
+
+.inIntro img {
+  width: 45px;
+}
+
+.inApp {
+  z-index: -10;
+  position: fixed;
+  bottom: 0;
+  width: 10%;
+  display: flex;
+  right: 0;
+  justify-content: space-evenly;
+  opacity: 60%;
+}
+
+.inApp img {
+  width: 40px;
+}
