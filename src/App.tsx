@@ -1,9 +1,10 @@
 import './App.css';
 import './styles/Page.css'
 
-import NavBackground from './components/NavBackground';
+import NavBackground from './components/navBar/NavBackground';
 
 import MyRoutes from './routes/MyRoutes';
+import Contacts from './components/contacts/Contacts';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       </div>
       <div className='page'>
         <MyRoutes />
+        <Contacts resolve='inApp' />
       </div>
     </div>
   );
