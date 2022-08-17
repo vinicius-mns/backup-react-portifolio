@@ -13,7 +13,7 @@
 .inApp {
   position: relative;
   bottom: 0;
-  width: 10%;
+  width: 15%;
   display: flex;
   justify-content: space-evenly;
   opacity: 80%;
@@ -24,7 +24,18 @@
 }
 
 .email {
+  height: 68px;
   position: fixed;
-  background-color: white;
+  background-color: rgb(0, 0, 0);
+  color: white;
   bottom: 8%;
+  padding: 20px;
+  opacity: 100%;
+}
+
+.email p {
+  color: red;
+  position: relative;
+  margin-left: 95%;
+  font-size: 25px;
 }

@@ -19,10 +19,16 @@ export default function Contacts({resolve}: any ) {
       <img 
         src="https://cdn-icons-png.flaticon.com/512/561/561127.png"
         alt="Email"
-        onMouseEnter={() => setE( true )}
-        onMouseLeave={() => setE( false )}
+        onClick={() => setE( true )}
       />
-      { e && <h2 className='email' >vinicius_dev@hotmail.com</h2> }
+      { e && 
+        <div className='email' onMouseLeave={() => setE( false )}>
+          <p onClick={() => setE( false )}>X</p>
+          <h2>
+            vinicius_dev@hotmail.com
+          </h2>
+        </div>
+      }
     </div>
   )
 }
