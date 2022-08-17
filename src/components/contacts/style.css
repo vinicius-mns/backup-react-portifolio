@@ -11,14 +11,12 @@
 }
 
 .inApp {
-  z-index: -10;
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 10%;
   display: flex;
-  right: 0;
   justify-content: space-evenly;
-  opacity: 60%;
+  opacity: 80%;
 }
 
 .inApp img {
