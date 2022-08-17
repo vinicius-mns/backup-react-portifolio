@@ -1,6 +1,6 @@
-import image from '../midia/saudacao.gif'
-import '../styles/intro.css'
-import Contacts from '../components/contacts/Contacts'
+import './style.css'
+import image from '../../midia/saudacao.gif'
+import Contacts from '../../components/contacts/Contacts'
 
 export default function Intro() {
   return(
