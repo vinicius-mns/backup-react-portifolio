@@ -1,4 +1,4 @@
-export default function ItemOption({text, click, active}: any){
+export default function ItemOption({text, click }: any){
   return (
     <button className='itemOption'>
       <input type="radio" id={text} name="radio" onClick={click} />
