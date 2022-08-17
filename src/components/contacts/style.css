@@ -22,3 +22,9 @@
 .inApp img {
   width: 40px;
 }
+
+.email {
+  position: fixed;
+  background-color: white;
+  bottom: 8%;
+}
