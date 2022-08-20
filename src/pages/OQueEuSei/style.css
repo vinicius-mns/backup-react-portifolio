@@ -1,9 +1,9 @@
 /* Container geral da pagina */
 .container_oqs {
-  width: 90%;
+  width: 100%;
   align-self: flex-start;
   display: flex;
-  margin-left: -5%;
+  margin-left: -10%;
   opacity: 10%;
   justify-content: center;
   animation: introContainer_oqs 0.5s ease forwards;
@@ -30,6 +30,25 @@
   opacity: 10%;
   margin-left: -50%;
   animation: introImg_oqs 15s ease forwards;
+}
+
+/* Container onde fica minha habilidades */
+
+.sub_container_oqs {
+  margin-top: 2%;
+}
+
+.sub_container_oqs h1 {
+  font-size: 50px;
+  font-weight: 100;
+}
+
+.sub_container_oqs h2 {
+  margin-top: 3%;
+}
+
+.skils {
+  margin-bottom: 3%;
 }
 
 /* Container onde fica os certificados */
@@ -98,7 +117,7 @@
 /* Animacao css */
 @keyframes introContainer_oqs {
   to {
-    margin-left: 5%;
+    margin-left: 0;
     opacity: 100%;
   }
 }
