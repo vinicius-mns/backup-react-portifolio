@@ -1,9 +1,9 @@
 import React from 'react'
-import { Props } from '../../types/ReacProps'
+import { contacts } from '../../types/ReacProps'
 import { useState } from 'react'
 import './style.css'
  
-const Contacts: React.FC<Props> = ({ resolve }) => {
+const Contacts: React.FC<contacts> = ({ resolve }) => {
 	const [ e, setE ] = useState( false )
 
 	return (
