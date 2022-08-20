@@ -28,7 +28,7 @@
 
 .text {
   margin-bottom: 5%;
-  width: 55%;
+  width: 60%;
   margin-left: -40%;
   opacity: 0%;
   animation: iniciar_text 0.5s 0.1s 1 forwards;
