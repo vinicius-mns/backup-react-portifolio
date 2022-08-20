@@ -1,3 +1,8 @@
-export type Props = {
-  resolve: 'inIntro' | 'inNavBar',
+export type contacts = {
+	resolve: 'inIntro' | 'inNavBar',
+}
+
+export type intemOption = {
+	text: string,
+  click: () => void
 }
