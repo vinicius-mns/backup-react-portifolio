@@ -1,5 +1,5 @@
 export type contacts = {
-	resolve: 'inIntro' | 'inNavBar',
+	resolve: 'inIntro' | 'inApp',
 }
 
 export type itemOption = {
