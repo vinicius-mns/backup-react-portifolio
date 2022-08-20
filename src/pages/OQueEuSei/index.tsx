@@ -1,5 +1,5 @@
 import './style.css'
-import { certificados } from './content'
+import { certificados, soft } from './content'
 import { useState } from 'react'
 
 export default function OQueEuSei({avatar}: any) {
@@ -13,6 +13,13 @@ export default function OQueEuSei({avatar}: any) {
           <img src={avatar} alt="eu" />
         </div>
         <div className='sub_container_oqs'>
+          <h1>Soft Skills</h1>
+          { soft.map(({titulo, content}, index) => (
+            <div key={index }>
+              <h2>{titulo}</h2>
+              {content.map( (x, i) => <p key={i} >{x}</p> )}
+            </div>
+          )) }
         </div>
       </div>
       <div className={x} onMouseOver={() => {xx('show'); cc('close_b_certificate')}} >
