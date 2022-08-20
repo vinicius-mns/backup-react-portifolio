@@ -19,7 +19,9 @@ const OQueEuSei: React.FC<oQueEuSei> = ({avatar}) => {
 					{ soft.map( ({titulo, content}, index ) => (
 						<div key={index }>
 							<h2>{titulo}</h2>
-							{content.map( ( x, i ) => <p key={i} >{x}</p> )}
+							<div className='skils'>
+								{content.map( ( x, i ) => <p key={i} >{x}</p> )}
+							</div>
 						</div>
 					) )}
 				</div>
