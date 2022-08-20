@@ -1,5 +1,4 @@
 * {
-  font-family: 'Red Hat Display', BlinkMacSystemFont, 'Segoe UI';
   margin: 0;
   padding: 0;
 }
@@ -18,22 +17,24 @@ body {
   background-repeat: no-repeat, repeat;
 }
 
-h3 {
-  font-weight: 100;
-  font-size: 15px;
-}
-
-p {
-  font-weight: 500;
-  font-size: 16px;
-}
-
 h1 {
+  font-family: 'Red Hat Display';
   font-weight: 100;
 }
 
 h2 {
+  font-family: 'Red Hat Display';
   font-weight: 100;
+}
+
+h3 {
+  font-family: 'Red Hat Display';
+  font-weight: 200;
+}
+
+p {
+  font-weight: 100;
+  font-size: 15px;
 }
 
 a {

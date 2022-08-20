@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&family=Red+Hat+Text&display=swap');
 
 body {
   margin: 0;
-  font-family: 'Red Hat Display', BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Red Hat Text', BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -10,6 +11,6 @@ body {
 }
 
 code {
-  font-family: 'Red Hat Display', Menlo, Monaco, Consolas, 'Courier New',
+  font-family: 'Red Hat Text', Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
