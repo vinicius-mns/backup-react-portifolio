@@ -35,6 +35,27 @@
         "semi": [
             "error",
             "never"
+        ],
+        "space-in-parens": [
+            "error",
+            "always",
+            {"exceptions": ["{}", "[]"]}
+        ],
+        "max-lines": [
+            "error",
+            300
+        ],
+        "max-len": [
+            "error",
+            130
+        ],
+        "block-spacing": [
+            "error",
+            "always"
+        ],
+        "array-bracket-spacing": [
+            "error",
+            "always"
         ]
     }
 }
