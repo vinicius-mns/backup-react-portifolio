@@ -1,8 +1,6 @@
-@keyframes appear {
-  from {
-    opacity: 0;
-  }
+@keyframes nav_bar {
   to {
     opacity: 100%;
+    margin-left: 0;
   }
 }

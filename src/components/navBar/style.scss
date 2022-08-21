@@ -2,10 +2,14 @@
 
 .container_nav {
   position: fixed;
+  @extend .flex;
   width: 24%;
   height: $max_height;
   background-color: $neutral_color;
-  @extend .flex;
+
+  margin-left: -30%;
+  opacity: 20%;
+  animation: nav_bar 1s 4s forwards
 }
 
 .container_itens {
@@ -14,9 +18,8 @@
   width: 100%;
   justify-content: space-evenly;
 
-  input{
+  input {
     display: none;
-
     &:checked + label,
     &:checked + label:active {
       background-color: $main_color;
