@@ -1,5 +1,6 @@
 import React from 'react'
-import { itemOption } from '../types/ReacProps'
+import { itemOption } from '../../types/ReacProps'
+import './style.scss'
 
 const ItemOption: React.FC<itemOption> = ({ text, click }) => {
 	return (
