@@ -1,17 +1,12 @@
+@import 'main';
+
 * {
   margin: 0;
   padding: 0;
 }
 
-.displayFlex {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 body {
-  background-color: rgb(191, 157, 157);
+  background-color: $main_color;
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat, repeat;
