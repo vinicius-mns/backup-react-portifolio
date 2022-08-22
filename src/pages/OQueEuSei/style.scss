@@ -1,0 +1,58 @@
+@import 'src/styles/main';
+
+.container_oqs {
+  @extend .page;
+  width: 72%;
+
+  & .container_img {
+    @extend .padrao_container_img;
+  }
+
+  & .sub_container {
+    width: 60%;
+
+    & h1 {
+      margin-top: 10px;
+      font-size: 50px;
+    }
+
+    & p {
+      margin-top: 5px;
+      text-align: justify;
+    }
+
+    & .skils {
+      margin-top: 15px;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.container_certificate {
+  @include flex(column);
+  justify-content: start;
+  align-items: flex-start;
+  position: fixed;
+  left: 97%;
+  top: 0;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 45%;
+  background-color: rgba(255, 255, 255, 0.333);
+
+  & h2 {
+    font-size: 40px;
+    color: white;
+    margin-left: 30px;
+  }
+
+  & a {
+    margin-left: 30px;
+    margin-top: 50px;
+  }
+
+  &:hover {
+    animation: intro_certificates 0.5s forwards;
+  }
+}
