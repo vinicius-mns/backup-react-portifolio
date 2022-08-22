@@ -5,12 +5,24 @@
 
   .container_img {
     @extend .padrao_container_img;
+    margin-left: -30%;
+    opacity: 10%;
+    @include slide-animation(0, 0.5s, 0s);
+
+    & img {
+      margin-left: 24%;
+      opacity: 0%;
+      @include slide-animation(48%, 0.5s, 0.2s);
+    }
   }
 }
 
 .container_text {
   width: 60%;
   text-align: justify;
+  margin-left: -20%;
+  opacity: 0%;
+  @include slide-animation(0, 0.5s, 0.4s);
 
   & h1 {
     font-size: 70px;
