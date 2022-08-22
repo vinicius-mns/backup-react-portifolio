@@ -18,3 +18,19 @@
     justify-content: center;
   }
 }
+
+@mixin slide-animation($to, $duration, $delay) {
+  $name: inline-#{unique-id()};
+
+  @keyframes #{$name} {
+    to {
+      margin-left: $to;
+      opacity: 100%;
+    }
+  }
+
+  animation-name: $name;
+  animation-duration: $duration;
+  animation-delay: $delay;
+  animation-fill-mode: forwards;
+}
