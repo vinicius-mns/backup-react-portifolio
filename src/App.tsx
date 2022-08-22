@@ -1,6 +1,5 @@
 import React from 'react'
 import './styles/App.scss'
-import './styles/Page.css'
 
 import NavBackground from './components/navBar'
 
@@ -12,7 +11,7 @@ function App() {
 			<div>
 				<NavBackground />
 			</div>
-			<div className='page'>
+			<div>
 				<MyRoutes />
 			</div>
 		</div>

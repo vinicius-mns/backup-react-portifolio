@@ -1,0 +1,25 @@
+@import 'display';
+
+$max_height: 100vh;
+
+.padrao_container_img {
+  margin-top: 1%;
+  width: 60%;
+  height: 27vh;
+  min-height: 190px;
+  overflow: hidden;
+  background-color: white;
+
+  & img {
+    margin-left: 48%;
+    width: 40%;
+  }
+}
+
+.page {
+  @include flex(column);
+  width: 76%;
+  margin-left: 24%;
+  height: 100vh;
+  overflow-y: scroll;
+}

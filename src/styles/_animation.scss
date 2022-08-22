@@ -1,0 +1,19 @@
+@keyframes nav_bar {
+  to {
+    opacity: 100%;
+    margin-left: 0;
+  }
+}
+
+@keyframes intro {
+  to {
+    left: 63%;
+  }
+}
+
+@keyframes intro_certificates {
+  to {
+    left: 55%;
+    background-color: rgba(0, 0, 0, 0.248);
+  }
+}

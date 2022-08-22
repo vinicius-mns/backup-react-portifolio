@@ -1,0 +1,22 @@
+@import 'src/styles/main';
+
+.container_qes {
+  @extend .page;
+
+  .container_img {
+    @extend .padrao_container_img;
+  }
+}
+
+.container_text {
+  width: 60%;
+  text-align: justify;
+
+  & h1 {
+    font-size: 70px;
+  }
+
+  & p {
+    margin-top: 4%;
+  }
+}

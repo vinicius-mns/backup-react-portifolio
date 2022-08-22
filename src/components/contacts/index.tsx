@@ -1,7 +1,7 @@
 import React from 'react'
 import { contacts } from '../../types/ReacProps'
 import { useState } from 'react'
-import './style.css'
+import './style.scss'
  
 const Contacts: React.FC<contacts> = ({ resolve }) => {
 	const [ e, setE ] = useState( false )

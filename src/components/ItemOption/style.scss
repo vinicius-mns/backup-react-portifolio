@@ -1,0 +1,15 @@
+@import 'src/styles/main';
+
+.itemOption {
+  border: none;
+  height: 9%;
+  width: 100%;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  
+  &:hover {
+    background-color: $second_color;
+    color: white;
+  }
+}
