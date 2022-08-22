@@ -7,34 +7,31 @@
 
 body {
   background-color: $main_color;
-  background-position: center;
-  background-size: 100%;
-  background-repeat: no-repeat, repeat;
-}
 
-h1 {
-  font-family: 'Red Hat Display';
-  font-weight: 100;
-}
+  h1 {
+    font-family: 'Red Hat Display';
+    font-weight: 100;
+  }
+  
+  h2 {
+    font-family: 'Red Hat Display';
+    font-weight: 100;
+  }
 
-h2 {
-  font-family: 'Red Hat Display';
-  font-weight: 100;
-}
-
-h3 {
-  font-family: 'Red Hat Display';
-  font-weight: 200;
-}
-
-p {
-  font-weight: 100;
-  font-size: 15px;
-}
-
-a {
-  text-decoration: none;
-  color: black;
+  h3 {
+    font-family: 'Red Hat Display';
+    font-weight: 200;
+  }
+  
+  p {
+    font-weight: 100;
+    font-size: 15px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
 }
 
 ::-webkit-scrollbar {
