@@ -15,7 +15,7 @@ export default function NavBackground(){
 				<ItemOption text='O que eu quero' click={ () => navigate( myPath.oQQuero ) }/>
 				<ItemOption text='O que eu não sei fazer' click={ () => navigate( myPath.oQueNaoSei ) }/>
 				<ItemOption text='Meus projetos' click={ () => navigate( myPath.projetos ) }/>
-				<ItemOption text='Porque do portifolio ser assim' click={ () => navigate( myPath.projetos ) }/>
+				<ItemOption text='Porque do portifolio ser assim' click={ () => navigate( myPath.portifolio ) }/>
 				<ItemOption text='Feebacks' click={ () => navigate( myPath.projetos ) }/>
 			</nav>
 		</div>
