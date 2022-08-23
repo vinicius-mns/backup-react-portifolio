@@ -16,7 +16,7 @@ export default function MyRoutes() {
 		<Routes>
 			<Route path='/' element={ <Intro /> } />
 			<Route path={ myPath.quemSou } element={ <QuemSouEu avatar={imgs.eu} /> } />
-			<Route path={ myPath.oQueSei } element={ <OQueEuSei avatar={imgs.teclando} /> } />
+			<Route path={ myPath.oQueSei } element={ <OQueEuSei avatar={imgs.soft} /> } />
 			<Route path={ myPath.oQQuero } element={ <OQueEuQuero /> } />
 			<Route path={ myPath.oQueNaoSei } element={ <OQueEuNaoSei /> } />
 			<Route path={ myPath.projetos } element={ <MeusProjetos /> } />
