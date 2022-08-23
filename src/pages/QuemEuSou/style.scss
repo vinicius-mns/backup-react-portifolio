@@ -3,7 +3,7 @@
 .container_qes {
   @extend .page;
 
-  .container_img {
+  & .container_img {
     @extend .padrao_container_img;
     margin-left: -30%;
     opacity: 10%;
