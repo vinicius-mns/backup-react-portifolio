@@ -9,6 +9,7 @@ $max_height: 100vh;
   max-height: 27vh;
   overflow: hidden;
   background-color: white;
+  pointer-events: none;
 
   & img {
     margin-left: 48%;
