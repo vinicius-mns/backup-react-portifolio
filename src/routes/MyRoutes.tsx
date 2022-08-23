@@ -9,6 +9,7 @@ import OQueEuNaoSei from '../pages/OQueEuNaoSei'
 import OQueEuQuero from '../pages/OQueEuQuero'
 import MeusProjetos from '../pages/MeusProjetos'
 import Portifolio from '../pages/Portifolio'
+import FeedBacks from '../pages/FeedBacks'
 
 import imgs from '../midia/midiaHub'
 
@@ -22,6 +23,7 @@ export default function MyRoutes() {
 			<Route path={ myPath.oQueNaoSei } element={ <OQueEuNaoSei/> }/>
 			<Route path={ myPath.projetos } element={ <MeusProjetos/> }/>
 			<Route path={ myPath.portifolio } element={ <Portifolio/> }/>
+			<Route path={ myPath.feedBacks } element={ <FeedBacks/> }/>
 		</Routes> 
 	)
 }

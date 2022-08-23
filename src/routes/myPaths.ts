@@ -5,6 +5,7 @@ const myPath = {
 	oQueNaoSei: 'O-Que-Nao-sei',
 	oQQuero: '/O-Que-Eu-Quero',
 	portifolio:'/Portifolio',
+	feedBacks:'/Feed-Backs',
 }
 
 export default myPath
