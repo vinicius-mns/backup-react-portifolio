@@ -20,14 +20,14 @@ const certificados = [
 const soft = [
 	{
 		titulo: 'Metodologias ágeis',
-		content: [ 'Com auxilio do Scrum e Kanban, trabalho muito bem em equipe.', 'Utilizo do Scrum para planejar, organizar e executar sprints com a minha equipe. Com ajuda do Kanban como ferramenta visual, dou visibilidade para toda minha equipe em tempo real das tarefas a serem executas e finalizadas.' ]
+		content: [ 'Com auxilio do Scrum e Kanban, trabalho muito bem em equipe. Utilizo do Scrum para planejar, organizar e executar sprints com a minha equipe. Com ajuda do Kanban como ferramenta visual, dou visibilidade para toda minha equipe em tempo real das tarefas a serem executas e finalizadas.' ]
 	},
 	{
-		titulo: 'Comunicacão',
+		titulo: 'Comunicação',
 		content: [ 'Utilizo da assertividade para melhorar entendimento, evitando inferências e ruídos na comunicação. Faco isso através da escuta ativa, dando e recebendo feedbacks, mediando conflitos, e me comunicando de forma não violenta.' ]
 	},
 	{
-		titulo: 'Colaboracao',
+		titulo: 'Colaboração',
 		content: [ 'Busco ao máximo contribuir e agregar a equipe, sempre estou disposto a ajudar quem precisa, e pedindo ajuda quando necessário, priorizando o tempo e a entrega.' ]
 	},
 	{
@@ -46,9 +46,21 @@ const soft = [
 
 const hard = [
 	{
-		titulo: 'Python',
-		content: [ 'Ultima linguagem de programacao que eu aprendi, sua area de atuacao e aforma que é escrita sao oq mais me atraem', 'A utilizei para fazer raspagem de dados no curso da Trybe, tambem a usei para leitura, escrita, organizacao de arquivos' ],
+		titulo: 'JavaScript',
+		content: [ 'Tive o primeiro contato no curso introdutório da Trybe no ano de 2022, e com os conhecimentos que obtive, pude criar meus primeiros códigos. Usei e ainda uso, tanto para criar este site quando para criar rest api. Com a facilidade de se aprender e infinitas bibliotecas espalhadas pela internet eu consigo desenvolver coisas novas.' ]
 	},
+	{
+		titulo: 'TypesScript',
+		content: [ 'Logo apos dominar JavaScript aprimorarei meus conhecimentos utilizando da tipagem.' ]
+	},
+	{
+		titulo: 'Python',
+		content: [ 'A segunda linguem de programação que aprendi e a minha favorita. Tive contado com Python quando cheguei ao modulo de Ciências da Computação em junho de 2022 e a utilizei para manipular ler e escrever arquivos (csv, txt, pptx), organizar, separar e filtrar dados. Também aprendi raspagem de dados e ainda pretendo aprender inteligencia artificial(apenas pela curiosidade). Amo sua área de atuação, adoro como ela é escrita, sem dúvidas é uma linguagem de alto valor.' ]
+	},
+	{
+		titulo: 'Programação Orientada a Objetos (POO)',
+		content: [ 'A melhor forma de programar na minha opinião, com o pouco de contato que tive já pude entender o poder que temos utilizando POO, estendendo blocos de códigos polpamos tempo de desenvolvimento e mantemos a sua integridade. Domino POO em Python e JavaScript' ]
+	}
 ]
 
 export {
