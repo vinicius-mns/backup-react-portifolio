@@ -1,0 +1,75 @@
+@import 'src/styles/main';
+
+.project-card {
+  margin-top: 1%;
+  margin-bottom: 3%;
+  width: 80%;
+
+  & .container-img {
+    h1 {
+      font-size: 40px;
+    }
+
+    & div {
+      @extend .padrao_container_img;
+      width: 100%;
+      background-color: white
+    }
+  }
+}
+
+.container-content {
+  @include flex(row);
+  align-items: stretch;
+
+  & .description {
+    text-align: justify;
+    width: 70%;
+
+    & p {
+      padding: 10px;
+    }
+  }
+
+  & .stacks-link {
+    padding: 10px;
+    width: 30%;
+    @include flex(column);
+
+    & .link {
+      width: 100%;
+      @include flex(row);
+      justify-content: space-between;
+      text-align: center;
+
+      & a {
+        @include flex(column_center);
+        background-color: black;
+        color: white;
+        width: 48%;
+        height: 35px;
+      }
+    }
+
+    & .stacks {
+      padding: 10px;
+      width: 100%;
+      @include flex(row);
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+
+      & div {
+        @include flex(column_center);
+        width: 35px;
+        height: 35px;
+        background-color: white;
+        border-radius: 50%;
+        margin: 5px;
+      }
+
+      & img {
+        width: 90%;
+      }
+    }
+  }
+}
