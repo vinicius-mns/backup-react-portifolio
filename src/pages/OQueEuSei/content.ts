@@ -20,27 +20,27 @@ const certificados = [
 const soft = [
 	{
 		titulo: 'Metodologias ágeis',
-		content: [ 'Com auxio do Scrum e Kanban, trabalho muito bem em equipe', 'Utilizando do Scrum para planejar, organizar e executar sprints, dando visibilidade de todo o projeto para a equipe, com ajuda do Kanban (utilizando no Trello) como ferramenta visual das historias' ]
+		content: [ 'Com auxilio do Scrum e Kanban, trabalho muito bem em equipe.', 'Utilizo do Scrum para planejar, organizar e executar sprints com a minha equipe. Com ajuda do Kanban como ferramenta visual, dou visibilidade para toda minha equipe em tempo real das tarefas a serem executas e finalizadas.' ]
 	},
 	{
 		titulo: 'Comunicacão',
-		content: [ 'Utilizo da acertividade para melhor entendimento, evitando inferencias e ruidos na comunicacao. Faco isso atravez da escuta ativa, dando e recebendo feedbacks, mediando conflitos, e me comunicando de forma nao violenta' ]
+		content: [ 'Utilizo da assertividade para melhorar entendimento, evitando inferências e ruídos na comunicação. Faco isso através da escuta ativa, dando e recebendo feedbacks, mediando conflitos, e me comunicando de forma não violenta.' ]
 	},
 	{
 		titulo: 'Colaboracao',
-		content: [ 'Busco ao maximo contribuir e agregar ao time, sempre disposto a ajudar quem precisa, e pedino ajuda quando necessario, priorizando a entrega' ]
+		content: [ 'Busco ao máximo contribuir e agregar a equipe, sempre estou disposto a ajudar quem precisa, e pedindo ajuda quando necessário, priorizando o tempo e a entrega.' ]
 	},
 	{
 		titulo: 'Pensamento critico',
-		content: [ 'Raciocinio logico e tomada de decisao sao meus pontos fortes, questiono sempre que tenho duvidas e nao aceito mediucridade' ]
+		content: [ 'Raciocínio logico e tomada de decisão são meus pontos fortes, questiono sempre que tenho dúvidas e não aceito mediocridade.' ]
 	},
 	{
 		titulo: 'Criatividade',
-		content: [ 'Meu portifolio deve dizer alguma coisa. Amo fazer coisas novas e diferntes, amo ter a liberdade de desenvolver da melhor forma possivel, amo aprender coisas novas para criar algo melhor a cada dia' ]
+		content: [ 'Meu portfólio deve dizer alguma coisa. Amo fazer coisas novas, diferentes, ter liberdade criativa, aprender, criar e surpreender pessoas.' ]
 	},
 	{
 		titulo: 'Lideranca',
-		content: [ 'Sei ser liderado e tambem sei liderar, busco sempre gerir bem o meu tempo e me autoliderar' ]
+		content: [ 'Sei liderar e ser liderado, busco sempre gerir bem o meu tempo e me autoliderar.' ]
 	},
 ]
 
