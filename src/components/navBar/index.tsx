@@ -12,9 +12,9 @@ export default function NavBackground(){
 			<nav className='container_itens'>
 				<ItemOption text='Quem Sou eu' click={ () => navigate( myPath.quemSou ) }/>
 				<ItemOption text='O que eu sei fazer' click={ () => navigate( myPath.oQueSei ) }/>
+				<ItemOption text='Meus projetos' click={ () => navigate( myPath.projetos ) }/>
 				<ItemOption text='O que eu quero' click={ () => navigate( myPath.oQQuero ) }/>
 				<ItemOption text='O que eu não sei fazer' click={ () => navigate( myPath.oQueNaoSei ) }/>
-				<ItemOption text='Meus projetos' click={ () => navigate( myPath.projetos ) }/>
 				<ItemOption text='Porque do portifolio ser assim' click={ () => navigate( myPath.portifolio ) }/>
 				<ItemOption text='Feebacks' click={ () => navigate( myPath.feedBacks ) }/>
 			</nav>

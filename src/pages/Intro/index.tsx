@@ -11,8 +11,8 @@ const Intro = () => {
 			</div>
 			<div className='container_content'>
 				<h1>Bem Vindo</h1>
-				<p>Olá, eu me chamo Vinicius e este é meu portifolio.</p>
-				<p>Fique a vontada para usar a barra leteral e me conhecer melhor</p>
+				<p>Olá, eu me chamo Vinicius e este é o meu portifolio.</p>
+				<p>Fique à vontade para usar a barra leteral e me conhecer melhor</p>
 				<Contacts resolve='inIntro' />
 			</div>
 		</div>
