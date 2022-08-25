@@ -2,18 +2,20 @@
 
 .project-card {
   margin-top: 1%;
-  margin-bottom: 3%;
-  width: 80%;
+  margin-bottom: 5%;
+  width: 75%;
 
   & .container-img {
-    h1 {
-      font-size: 40px;
-    }
-
     & div {
       @extend .padrao_container_img;
       width: 100%;
-      background-color: white
+      min-height: 34vh;
+      max-height: 34vh;
+
+      & img {
+        margin-left: 20%;
+        width: 100%;
+      }
     }
   }
 }
@@ -21,19 +23,24 @@
 .container-content {
   @include flex(row);
   align-items: stretch;
+  margin-top: 2%;
+  justify-content: space-between;
 
   & .description {
     text-align: justify;
-    width: 70%;
+    width: 69%;
+    & h1 {
+      font-size: 40px;
+      line-height: 30px;
+    }
 
     & p {
-      padding: 10px;
+      margin-top: 3%;
     }
   }
 
   & .stacks-link {
-    padding: 10px;
-    width: 30%;
+    width: 29%;
     @include flex(column);
 
     & .link {
@@ -48,27 +55,32 @@
         color: white;
         width: 48%;
         height: 35px;
+
+        &:hover {
+          background-color: white;
+          color: black;
+        }
       }
     }
 
     & .stacks {
-      padding: 10px;
       width: 100%;
       @include flex(row);
       flex-wrap: wrap;
-      justify-content: space-evenly;
+      justify-content: space-between;
 
       & div {
         @include flex(column_center);
-        width: 35px;
-        height: 35px;
+        width: 48%;
+        height: 32px;
         background-color: white;
-        border-radius: 50%;
-        margin: 5px;
+        overflow: hidden;
+        margin-top: 4%;
+        opacity: 80%;
       }
 
       & img {
-        width: 90%;
+        height: 100%;
       }
     }
   }
