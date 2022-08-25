@@ -16,6 +16,6 @@ export type cardProject = {
 	title: string,
 	text: string[],
 	repo?: string,
-	site: string,
+	site?: string,
 	stacks: {image: string, desc: string}[],
 }
