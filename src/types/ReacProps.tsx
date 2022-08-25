@@ -10,3 +10,12 @@ export type itemOption = {
 export type oQueEuSei = {
 	avatar: string
 }
+
+export type cardProject = {
+	image: {image: string, desc: string},
+	title: string,
+	text: string[],
+	repo?: string,
+	site: string,
+	stacks: {image: string, desc: string}[],
+}
