@@ -16,8 +16,8 @@ const CardProject: React.FC<cardProject> = ({image, title, text, site, repo, sta
 				</div>
 				<div className='stacks-link'>
 					<div className='link'>
-						{site &&  <a href={site}>Site</a>}
-						{repo && <a href={repo}>Respositório</a>}
+						{site && <a href={site} target='blak'>Site</a>}
+						{repo && <a href={repo} target='blak'>Respositório</a>}
 					</div>
 					<div className='stacks'>
 						{stacks.map( ( s, i ) => <div key={i}><img src={s.image} alt={s.desc}/></div> )}
