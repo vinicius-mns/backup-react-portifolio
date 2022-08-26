@@ -18,6 +18,10 @@
       }
     }
   }
+
+  opacity: 20%;
+  margin-left: -30%;
+  @include slide-animation(0, 0.5s, 0s)
 }
 
 .container-content {
