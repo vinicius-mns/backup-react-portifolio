@@ -41,6 +41,10 @@
     & p {
       margin-top: 3%;
     }
+
+    opacity: 0;
+    margin-left: -10%;
+    @include slide-animation(0, 0.5s, 0.3s)
   }
 
   & .stacks-link {
