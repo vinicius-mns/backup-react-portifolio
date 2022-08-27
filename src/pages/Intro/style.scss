@@ -3,7 +3,7 @@
 .intro {
   @include flex(column);
   justify-content: space-evenly;
-  background-color: $neutral_color;
+  background-color: $back-color;
   position: fixed;
   width: 50%;
   height: 95%;
