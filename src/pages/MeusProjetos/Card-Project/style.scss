@@ -65,7 +65,7 @@
         height: 35px;
 
         &:hover {
-          background-color: white;
+          background-color: $hover-color;
           color: black;
         }
       }
@@ -85,10 +85,9 @@
         @include flex(column_center);
         width: 22%;
         height: 35px;
-        background-color: white;
+        background-color: $back-color;
         overflow: hidden;
         margin-top: 4%;
-        opacity: 80%;
       }
 
       & img {
