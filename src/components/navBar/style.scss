@@ -7,7 +7,7 @@
   @include flex(column_center);
   width: 24%;
   height: 100%;
-  background-color: $neutral_color;
+  background-color: $back-color;
 
   margin-left: -30%;
   opacity: 20%;
@@ -24,8 +24,8 @@
     display: none;
     &:checked + label,
     &:checked + label:active {
-      background-color: $main_color;
-      color: black;
+      background-color: black;
+      color: white;
     }
   }
 
