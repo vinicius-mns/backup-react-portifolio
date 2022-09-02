@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
 import React from 'react'
 import './style.scss'
-import { cardProject } from '../../../types/ReacProps'
+import { cardProject } from '../../../../types/ReacProps'
 
 const CardProject: React.FC<cardProject> = ({image, title, text, site, repo, stacks}) => {
 	return (

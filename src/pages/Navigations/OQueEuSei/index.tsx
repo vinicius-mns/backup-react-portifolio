@@ -1,8 +1,8 @@
 import React from 'react'
 import './style.scss'
 import { certificados, soft, hard } from './content'
-import { oQueEuSei } from '../../types/ReacProps'
-import Contacts from '../../components/contacts'
+import { oQueEuSei } from '../../../types/ReacProps'
+import Contacts from '../../../components/contacts'
 
 const OQueEuSei: React.FC<oQueEuSei> = ({avatar}) => {
 	return (

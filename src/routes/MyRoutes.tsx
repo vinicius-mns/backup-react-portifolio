@@ -2,16 +2,16 @@
 import { Routes, Route } from 'react-router-dom'
 import myPath from './myPaths'
 
-import Intro from '../pages/Intro'
-import QuemSouEu from '../pages/QuemEuSou'
-import OQueEuSei from '../pages/OQueEuSei'
-import OQueEuNaoSei from '../pages/OQueEuNaoSei'
-import OQueEuQuero from '../pages/OQueEuQuero'
-import MeusProjetos from '../pages/MeusProjetos'
-import Portifolio from '../pages/Portifolio'
-import FeedBacks from '../pages/FeedBacks'
+import Intro from '../pages/Navigations/Intro'
+import QuemSouEu from '../pages/Navigations/QuemEuSou'
+import OQueEuSei from '../pages/Navigations/OQueEuSei'
+import OQueEuNaoSei from '../pages/Navigations/OQueEuNaoSei'
+import OQueEuQuero from '../pages/Navigations/OQueEuQuero'
+import MeusProjetos from '../pages/Navigations/MeusProjetos'
+import Portifolio from '../pages/Navigations/Portifolio'
+import FeedBacks from '../pages/Navigations/FeedBacks'
 
-import imgs from '../midia/midiaHub'
+import imgs from '../midia'
 
 export default function MyRoutes() {
 	return(

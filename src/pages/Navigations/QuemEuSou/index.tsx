@@ -1,8 +1,8 @@
 import React from 'react'
 import './style.scss'
 import { img_description, i_am } from './content'
-import Contacts from '../../components/contacts'
-import { oQueEuSei } from '../../types/ReacProps'
+import Contacts from '../../../components/contacts'
+import { oQueEuSei } from '../../../types/ReacProps'
 
 const QuemSouEu: React.FC<oQueEuSei> = ({avatar}) => {
 	return(

@@ -1,5 +1,5 @@
 /* eslint-disable max-len */
-import { cardProject } from '../../../../types/ReacProps'
+import { cardProject } from '../../../../../types/ReacProps'
 import img from './calorias.png'
 
 export const AppCalorias: cardProject = {
