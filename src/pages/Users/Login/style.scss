@@ -1,0 +1,24 @@
+@import 'src/styles/main';
+
+main {
+  position: absolute;
+  background-color: red;
+
+  width: 50%;
+  height: 80vh;
+  top: 0;
+
+  & div {
+    background-color: blue;
+    @include flex(column_center);
+
+    & input {
+      width: 90%;
+    }
+  }
+
+  & button {
+    border: none;
+    width: 100%;
+  }
+}
