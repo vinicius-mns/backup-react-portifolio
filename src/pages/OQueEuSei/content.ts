@@ -24,7 +24,7 @@ const soft = [
 	},
 	{
 		titulo: 'Comunicação',
-		content: [ 'Utilizo da assertividade para melhorar entendimento, evitando inferências e ruídos na comunicação. Faco isso através da escuta ativa, dando e recebendo feedbacks, mediando conflitos, e me comunicando de forma não violenta.' ]
+		content: [ 'Utilizo da assertividade para melhorar entendimento, evitando inferências e ruídos na comunicação. Faço isso através da escuta ativa, dando e recebendo feedbacks, mediando conflitos, e me comunicando de forma não violenta.' ]
 	},
 	{
 		titulo: 'Colaboração',
