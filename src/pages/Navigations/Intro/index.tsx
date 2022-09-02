@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './style.scss'
 import image from '../../../midia'
 import Contacts from '../../../components/contacts'
+import Login from '../../Users/Login'
 
 const Intro = () => {
+	const [ login, setLogin ] = useState( false )
+
 	return(
 		<div className='intro'>
 			<div className='container_img' >
@@ -14,6 +17,8 @@ const Intro = () => {
 				<p>Olá, eu me chamo Vinicius e este é o meu portifolio.</p>
 				<p>Fique à vontade para usar a barra leteral e me conhecer melhor</p>
 				<Contacts resolve='inIntro' />
+				<button onClick={() => setLogin( true )} >Logar</button>
+				{login && <Login />}
 			</div>
 		</div>
 	)
