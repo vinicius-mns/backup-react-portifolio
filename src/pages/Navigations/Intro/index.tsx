@@ -23,7 +23,7 @@ const Intro = () => {
 				<p>Olá, eu me chamo Vinicius e este é o meu portifolio.</p>
 				<p>Fique à vontade para usar a barra leteral e me conhecer melhor</p>
 				<Contacts resolve='inIntro' />
-				<button onClick={activeLogin} ></button>
+				<button className='button' onClick={activeLogin}></button>
 				{login && <Login />}
 			</div>
 		</div>
