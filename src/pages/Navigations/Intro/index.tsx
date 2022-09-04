@@ -6,6 +6,12 @@ import Login from '../../Users/Login'
 
 const Intro = () => {
 	const [ login, setLogin ] = useState( false )
+	const [ count, setCount ] = useState( 0 )
+
+	const activeLogin = () => {
+		setCount( count + 1 )
+		if ( count === 5 ) setLogin( true )
+	}
 
 	return(
 		<div className='intro'>
@@ -17,7 +23,7 @@ const Intro = () => {
 				<p>Olá, eu me chamo Vinicius e este é o meu portifolio.</p>
 				<p>Fique à vontade para usar a barra leteral e me conhecer melhor</p>
 				<Contacts resolve='inIntro' />
-				<button onClick={() => setLogin( true )} >Logar</button>
+				<button onClick={activeLogin} ></button>
 				{login && <Login />}
 			</div>
 		</div>
