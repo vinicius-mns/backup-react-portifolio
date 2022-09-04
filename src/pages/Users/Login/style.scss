@@ -1,24 +1,33 @@
 @import 'src/styles/main';
 
 main {
-  position: absolute;
-  background-color: red;
-
-  width: 50%;
-  height: 80vh;
+  @include flex(column_center);
   top: 0;
-
+  padding: 20px;
+  position: absolute;
+  background-color: $back-color;
+  width: 60%;
+  height: 89vh;
+  
   & div {
-    background-color: blue;
+    width: 100%;
     @include flex(column_center);
-
+    
     & input {
-      width: 90%;
+      width: 100%;
+      border: none;
+      margin-top: 5%;
+      height: 30px;
+      border-style: none;
     }
   }
-
+  
   & button {
-    border: none;
+    height: 30px;
     width: 100%;
+    border: none;
+    background-color: black;
+    color: white;
+    margin-top: 5%;
   }
 }

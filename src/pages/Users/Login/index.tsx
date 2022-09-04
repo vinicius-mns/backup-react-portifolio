@@ -4,11 +4,12 @@ import './style.scss'
 const Login = () => {
 	return (
 		<main>
+			<h2>Bem vindo de volta</h2>
 			<div>
 				<input type="text" placeholder='Nome' />
 				<input type="password" placeholder='Senha' />
 			</div>
-			<button>Logar</button>
+			<button className='teste'>Logar</button>
 		</main>
 	)
 }
