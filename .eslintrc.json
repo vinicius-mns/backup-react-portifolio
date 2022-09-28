@@ -37,11 +37,6 @@
             "error",
             "never"
         ],
-        "space-in-parens": [
-            "error",
-            "always",
-            {"exceptions": ["{}", "[]"]}
-        ],
         "max-lines": [
             "error",
             300
