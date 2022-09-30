@@ -28,5 +28,14 @@
     height: 45vh;
   }
 
+  & .button {
+    position: absolute;
+    bottom: 0;
+    border: none;
+    height: 28px;
+    background-color: $back-color;
+    width: 100%;
+  }
+
   animation: intro 1.5s 2.5s forwards;
 }

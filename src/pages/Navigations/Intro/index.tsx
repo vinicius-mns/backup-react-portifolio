@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './style.scss'
 import image from '../../../midia'
 import Contacts from '../../../components/contacts'
+import Login from '../../Users/Login'
 
 const Intro = () => {
 	return(
