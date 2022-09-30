@@ -4,9 +4,9 @@
   @include flex(row);
   width: 50%;
   justify-content: space-evenly;
-
+  margin-bottom: 20px;
   & img {
-    width: 45px;
+    width: 35px;
   }
 }
 
