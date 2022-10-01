@@ -3,12 +3,15 @@ import './style.scss'
 import ItemOption from '../ItemOption'
 import { useNavigate } from 'react-router-dom'
 import myPath from '../../routes/myPaths'
+import { useSelector } from 'react-redux'
+import { Store } from '../../redux/store'
 
 export default function NavBackground(){
 	const navigate = useNavigate()
+	const sideBar = useSelector((state: Store) => state.toggleComponents.sideBar)
 
 	return(
-		<div className='container_nav' >
+		<div className={`container_nav ${sideBar}`} >
 			<nav className='container_itens'>
 				<ItemOption text='Quem Sou eu' click={ () => navigate( myPath.quemSou ) }/>
 				<ItemOption text='O que eu sei fazer' click={ () => navigate( myPath.oQueSei ) }/>
