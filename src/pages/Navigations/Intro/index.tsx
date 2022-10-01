@@ -2,12 +2,13 @@ import React, { useState } from 'react'
 import './style.scss'
 import image from '../../../midia'
 import Contacts from '../../../components/contacts'
-import { useDispatch } from 'react-redux'
-import { SideBar } from '../../../redux/slices/toggleComponents'
-
+import { useDispatch, useSelector } from 'react-redux'
+import { SideBar, slideIntroCard } from '../../../redux/slices/toggleComponents'
+import { Store } from '../../../redux/store'
 
 const Intro = () => {
 	const dispatch = useDispatch()
+	const slideCard = useSelector((state: Store) => state.toggleComponents.introCard)
 
 	useState(() => dispatch(SideBar(''))) // inicia com a barra leteral "invisivel"
 
@@ -17,7 +18,7 @@ const Intro = () => {
 	}
 
 	return(
-		<div className='intro'>
+		<div className={`intro ${slideCard}`}>
 			<div className='container_img' >
 				<img className='avatarx' src={image.saudacao} alt='boneco modelo 3d' />
 			</div>
