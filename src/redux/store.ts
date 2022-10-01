@@ -8,7 +8,10 @@ const store = configureStore({
 })
 
 export type Store = {
-	toggleComponents: { sideBar: 'showSideBar' | '' } 
+	toggleComponents: { 
+		sideBar: 'showSideBar' | '',
+		introCard: 'slideIntroCard' | '',
+	}
 }
 
 export default store
