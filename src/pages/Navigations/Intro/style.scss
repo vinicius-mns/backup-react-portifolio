@@ -36,9 +36,10 @@
     color: white;
     bottom: 0;
     border: none;
-    height: 28px;
-    background-color: $back-color;
-    width: 100%;
+
+    &:hover {
+      background-color: rgb(64, 64, 64);
+    }
   }
 
   animation: intro 1.5s 2.5s forwards;
