@@ -1,8 +1,8 @@
 @import 'src/styles/main';
 
 .intro {
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.101) ;
   @include flex(column);
-  justify-content: space-evenly;
   background-color: $back-color;
   position: fixed;
   width: 50%;
@@ -25,24 +25,24 @@
     @include flex(column);
     justify-content: space-evenly;
     width: 100%;
-    height: 45vh;
+    height: 43vh;
   }
 
   & .button {
     position: absolute;
     width: 100%;
-    height: 45px;
+    height: 55px;
     background-color: black;
     color: white;
     bottom: 0;
     border: none;
 
     &:hover {
-      background-color: rgb(64, 64, 64);
+      background-color: rgb(125, 165, 164);
+      color: black;
+      cursor: pointer;
     }
   }
-
-  animation: intro 1.5s 2.5s forwards;
 }
 
 .slideIntroCard {
