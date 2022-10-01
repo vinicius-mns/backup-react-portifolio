@@ -1,8 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './style.scss'
 import image from '../../../midia'
 import Contacts from '../../../components/contacts'
-import Login from '../../Users/Login'
 
 const Intro = () => {
 	return(
@@ -16,6 +15,7 @@ const Intro = () => {
 				<p>Fique à vontade para usar a barra leteral e me conhecer melhor</p>
 				<Contacts resolve='inIntro' />
 			</div>
+			<button className='button'><h2>I N I C I A R</h2></button>
 		</div>
 	)
 }
