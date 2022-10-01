@@ -11,6 +11,11 @@ const Intro = () => {
 
 	useState(() => dispatch(SideBar(''))) // inicia com a barra leteral "invisivel"
 
+	const start = () => {
+		dispatch(SideBar('showSideBar'))
+		dispatch(slideIntroCard())
+	}
+
 	return(
 		<div className='intro'>
 			<div className='container_img' >
@@ -22,7 +27,7 @@ const Intro = () => {
 				<p>Fique à vontade para usar a barra leteral e me conhecer melhor</p>
 				<Contacts resolve='inIntro' />
 			</div>
-			<button className='button'><h2>I N I C I A R</h2></button>
+			<button onClick={ start } className='button'><h2>I N I C I A R</h2></button>
 		</div>
 	)
 }
