@@ -11,7 +11,6 @@
 
   margin-left: -30%;
   opacity: 20%;
-  animation: nav_bar 1s 2s forwards
 }
 
 .container_itens {
@@ -37,4 +36,8 @@
     align-items: center;
     justify-content: center;
   }
+}
+
+.showSideBar {
+  animation: nav_bar 1s 0s forwards
 }
