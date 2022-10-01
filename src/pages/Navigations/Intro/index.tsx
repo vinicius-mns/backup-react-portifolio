@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './style.scss'
 import image from '../../../midia'
 import Contacts from '../../../components/contacts'
+import { useDispatch } from 'react-redux'
+import { SideBar } from '../../../redux/slices/toggleComponents'
+
 
 const Intro = () => {
+	const dispatch = useDispatch()
+
+	useState(() => dispatch(SideBar(''))) // inicia com a barra leteral "invisivel"
+
 	return(
 		<div className='intro'>
 			<div className='container_img' >
