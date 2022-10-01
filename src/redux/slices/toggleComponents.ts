@@ -3,12 +3,12 @@ import { createSlice } from '@reduxjs/toolkit'
 const toggleComponents = createSlice({
 	name: 'toggleComponents',
 	initialState: {
-		sideBar: '',
+		sideBar: 'showSideBar',
 		introCard: '',
 	},
 	reducers: {
-		showSideBar: (state) => {
-			state.sideBar = 'showSideBar'
+		SideBar: (state, action: { payload: '' | 'showSideBar' }) => {
+			state.sideBar = action.payload
 		},
 		slideIntroCard: (state) => {
 			state.introCard = 'slideIntroCard'
@@ -16,6 +16,6 @@ const toggleComponents = createSlice({
 	}
 })
 
-export const { showSideBar, slideIntroCard } = toggleComponents.actions
+export const { SideBar, slideIntroCard } = toggleComponents.actions
 
 export default toggleComponents
