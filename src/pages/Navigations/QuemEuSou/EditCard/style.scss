@@ -48,14 +48,14 @@
     width: 96%;
 
     & textarea {
-      background-color: rgb(239, 239, 239);
-      resize: none;
       outline: none;
-      width: 95%;
       border: none;
+      resize: none;
+      background-color: rgb(239, 239, 239);
+      width: 95%;
       height: 60vh;
-      font-size: 18px;
       padding: 2.5% 2.5%;
+      font-family: 'Red Hat Text';
     }
   }
 
