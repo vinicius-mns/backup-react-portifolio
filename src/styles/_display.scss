@@ -35,3 +35,18 @@
   animation-delay: $delay;
   animation-fill-mode: forwards;
 }
+
+@mixin form-mount($to, $duration) {
+  $name: inline-#{unique-id()};
+
+  @keyframes #{$name} {
+    to {
+      margin-left: $to;
+      opacity: 100%;
+    }
+  }
+
+  animation-name: $name;
+  animation-duration: $duration;
+  animation-fill-mode: forwards;
+}

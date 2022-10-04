@@ -18,7 +18,7 @@ const quemEuSou = createSlice({
 				src: '',
 				alt: ''
 			},
-			content: '# a'
+			content: '# Carregando...'
 		} as IamInterface,
 	reducers: {
 		setQuemEuSou: (state, action: { payload: IamInterface }) => {
