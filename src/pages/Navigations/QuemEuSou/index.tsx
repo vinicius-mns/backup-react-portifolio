@@ -3,16 +3,21 @@ import './style.scss'
 import { img_description, i_am } from './content'
 import Contacts from '../../../components/contacts'
 import { oQueEuSei } from '../../../types/ReacProps'
+import ReactMarkdown from 'react-markdown'
+import { useSelector } from 'react-redux'
+import { Store } from '../../../redux/store'
+import Contacts from '../../../components/contacts'
 
-const QuemSouEu: React.FC<oQueEuSei> = ({avatar}) => {
+const QuemSouEu: React.FC<oQueEuSei> = () => {
+	const iam = useSelector((state: Store) => state.quemEuSou)
+
 	return(
 		<div className='container_qes'>
 			<div className='container_img'>
-				<img className='avatar' src={avatar} alt={img_description} />
+				<img className='avatar' src={iam.image.src} alt={iam.image.alt} />
 			</div>
 			<div className='container_text'>
-				<h1>V i n í c i u s</h1>
-				{ i_am.map( ( me, index ) => <p key={ index } >{ me }</p> ) }
+				<ReactMarkdown className='mark'>{ iam.content }</ReactMarkdown>
 			</div>
 			<Contacts resolve='inApp' />
 		</div>
