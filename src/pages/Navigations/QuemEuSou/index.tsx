@@ -1,20 +1,37 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './style.scss'
-import { img_description, i_am } from './content'
-import Contacts from '../../../components/contacts'
 import { oQueEuSei } from '../../../types/ReacProps'
+import ReactMarkdown from 'react-markdown'
+import { useSelector } from 'react-redux'
+import { Store } from '../../../redux/store'
+import { useDispatch } from 'react-redux'
+import MyAxios from '../../../classes/MyAxios'
+import { setQuemEuSou } from '../../../redux/slices/quemEuSou' 
+import Contacts from '../../../components/contacts'
+import EditCard from './EditCard'
+import { setFormQuemEuSou } from '../../../redux/slices/toggleComponents'
 
-const QuemSouEu: React.FC<oQueEuSei> = ({avatar}) => {
+const QuemSouEu: React.FC<oQueEuSei> = () => {
+	const iam = useSelector((state: Store) => state.quemEuSou)
+	const switchModel = useSelector((state: Store) => state.toggleComponents.formQuemEuSou)
+	const dispatch = useDispatch()
+
+	useEffect(() => {
+		const iamAxios = new MyAxios('https://v-portifolio-backend.herokuapp.com/iam')
+		iamAxios.getOne().then(e => dispatch(setQuemEuSou(e)))
+	})
+
 	return(
 		<div className='container_qes'>
 			<div className='container_img'>
-				<img className='avatar' src={avatar} alt={img_description} />
+				<img className='avatar' src={iam.image.src} alt={iam.image.alt} />
 			</div>
 			<div className='container_text'>
-				<h1>V i n í c i u s</h1>
-				{ i_am.map( ( me, index ) => <p key={ index } >{ me }</p> ) }
+				<ReactMarkdown className='mark'>{ iam.content }</ReactMarkdown>
 			</div>
 			<Contacts resolve='inApp' />
+			<button className='switch' onClick={() => dispatch(setFormQuemEuSou())}>Editar</button>
+			{ switchModel && <EditCard /> }
 		</div>
 	)
 }

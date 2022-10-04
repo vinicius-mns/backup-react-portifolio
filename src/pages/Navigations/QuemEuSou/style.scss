@@ -15,6 +15,17 @@
       @include slide-animation(48%, 0.5s, 0.2s);
     }
   }
+
+  & .switch {
+    border: none;
+    border-style: none;
+    background-color: black;
+    color: white;
+    width: 45.3%;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+  }
 }
 
 .container_text {
@@ -30,5 +41,11 @@
 
   & p {
     margin-top: 4%;
+  }
+
+  & .mark {
+    a {
+      color: rgb(224, 45, 45);
+    }
   }
 }

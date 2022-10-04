@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit'
-import appSlice from './slices/toggleComponents'
+import quemEuSou, { IamInterface } from './slices/quemEuSou'
+import toggleComponents from './slices/toggleComponents'
 
 const store = configureStore({
 	reducer: {
-		toggleComponents: appSlice.reducer,
+		toggleComponents: toggleComponents.reducer,
+		quemEuSou: quemEuSou.reducer,
 	}
 })
 
@@ -11,7 +13,9 @@ export type Store = {
 	toggleComponents: { 
 		sideBar: 'showSideBar' | '',
 		introCard: 'slideIntroCard' | '',
-	}
+		formQuemEuSou: boolean,
+	},
+	quemEuSou: IamInterface,
 }
 
 export default store
