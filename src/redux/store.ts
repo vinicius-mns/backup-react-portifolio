@@ -1,10 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit'
 import quemEuSou, { IamInterface } from './slices/quemEuSou'
-import appSlice from './slices/toggleComponents'
+import toggleComponents from './slices/toggleComponents'
 
 const store = configureStore({
 	reducer: {
-		toggleComponents: appSlice.reducer,
+		toggleComponents: toggleComponents.reducer,
 		quemEuSou: quemEuSou.reducer,
 	}
 })
