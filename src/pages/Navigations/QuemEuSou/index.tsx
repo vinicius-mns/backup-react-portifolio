@@ -8,9 +8,12 @@ import { useDispatch } from 'react-redux'
 import MyAxios from '../../../classes/MyAxios'
 import { setQuemEuSou } from '../../../redux/slices/quemEuSou' 
 import Contacts from '../../../components/contacts'
+import EditCard from './EditCard'
+import { setFormQuemEuSou } from '../../../redux/slices/toggleComponents'
 
 const QuemSouEu: React.FC<oQueEuSei> = () => {
 	const iam = useSelector((state: Store) => state.quemEuSou)
+	const switchModel = useSelector((state: Store) => state.toggleComponents.formQuemEuSou)
 	const dispatch = useDispatch()
 
 	useEffect(() => {
@@ -27,6 +30,8 @@ const QuemSouEu: React.FC<oQueEuSei> = () => {
 				<ReactMarkdown className='mark'>{ iam.content }</ReactMarkdown>
 			</div>
 			<Contacts resolve='inApp' />
+			<button onClick={() => dispatch(setFormQuemEuSou())} >Editar</button>
+			{ switchModel && <EditCard /> }
 		</div>
 	)
 }
