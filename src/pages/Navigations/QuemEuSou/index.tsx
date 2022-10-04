@@ -30,7 +30,7 @@ const QuemSouEu: React.FC<oQueEuSei> = () => {
 				<ReactMarkdown className='mark'>{ iam.content }</ReactMarkdown>
 			</div>
 			<Contacts resolve='inApp' />
-			<button onClick={() => dispatch(setFormQuemEuSou())} >Editar</button>
+			<button className='switch' onClick={() => dispatch(setFormQuemEuSou())}>Editar</button>
 			{ switchModel && <EditCard /> }
 		</div>
 	)
