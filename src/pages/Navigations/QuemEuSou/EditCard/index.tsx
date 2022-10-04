@@ -1,6 +1,8 @@
-import React from 'react'
+import { AxiosError } from 'axios'
+import React, { FormEvent } from 'react'
 import { useSelector } from 'react-redux'
 import { useDispatch } from 'react-redux'
+import MyAxios from '../../../../classes/MyAxios'
 import { setFormQuemEuSou } from '../../../../redux/slices/toggleComponents'
 import { Store } from '../../../../redux/store'
 import './style.scss'
@@ -9,8 +11,29 @@ const EditCard = () => {
 	const dispatch = useDispatch()
 	const iam = useSelector((state: Store) => state.quemEuSou)
 
+	const submit = async (e: FormEvent<HTMLFormElement>) => {
+		try {
+			e.preventDefault()
+			const data = {
+				image: {
+					src: e.currentTarget.src.value,
+					alt: e.currentTarget.alt.value,
+				},
+				content: e.currentTarget.content.value
+			}
+			const iamAxios = new MyAxios('https://v-portifolio-backend.herokuapp.com/iam')
+			await iamAxios.update(iam._id, data)
+			dispatch(setFormQuemEuSou())
+		} catch (err) {
+			if (err instanceof AxiosError) {
+				const message = err.response?.data.issues[0].message
+				alert(message)
+			}
+		}
+	}
+
 	return (
-		<form className='form'>
+		<form className='form' onSubmit={ submit }>
 			<button className='close' onClick={() => dispatch(setFormQuemEuSou())}>X</button>
 			<div className='image-container'>
 				<h1>Imagem</h1>
@@ -32,7 +55,7 @@ const EditCard = () => {
 					<textarea name='content' defaultValue={iam.content} />
 				</label>
 			</div>		
-			<button className='submit'>Enviar</button>
+			<button className='submit' type='submit'>Enviar</button>
 		</form>
 	)
 }
