@@ -5,6 +5,7 @@ const toggleComponents = createSlice({
 	initialState: {
 		sideBar: 'showSideBar',
 		introCard: '',
+		formQuemEuSou: false
 	},
 	reducers: {
 		SideBar: (state, action: { payload: '' | 'showSideBar' }) => {
@@ -12,10 +13,15 @@ const toggleComponents = createSlice({
 		},
 		slideIntroCard: (state) => {
 			state.introCard = 'slideIntroCard'
+		},
+		setFormQuemEuSou: (state) => {
+			state.formQuemEuSou === true ?
+				state.formQuemEuSou = false :
+				state.formQuemEuSou = true
 		}
 	}
 })
 
-export const { SideBar, slideIntroCard } = toggleComponents.actions
+export const { SideBar, slideIntroCard, setFormQuemEuSou } = toggleComponents.actions
 
 export default toggleComponents
