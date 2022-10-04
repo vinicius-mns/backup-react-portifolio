@@ -12,6 +12,7 @@
 
 .inApp {
   margin-top: 2%;
+  margin-bottom: 40px;
   @include flex(row);
   justify-content: space-evenly;
   opacity: 80%;
