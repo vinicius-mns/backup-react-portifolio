@@ -13,6 +13,7 @@ export type Store = {
 	toggleComponents: { 
 		sideBar: 'showSideBar' | '',
 		introCard: 'slideIntroCard' | '',
+		formQuemEuSou: boolean,
 	},
 	quemEuSou: IamInterface,
 }
