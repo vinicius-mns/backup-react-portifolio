@@ -1,5 +1,14 @@
 import { createSlice } from '@reduxjs/toolkit'
 
+export interface IamInterface {
+	_id: string,
+	image: {
+		src: string,
+		alt: string
+	},
+	content: string
+}
+
 const quemEuSou = createSlice({
 	name: 'quemEuSou',
 	initialState:
@@ -9,10 +18,10 @@ const quemEuSou = createSlice({
 				src: '',
 				alt: ''
 			},
-			content: '# Carregando'
-		},
+			content: '# a'
+		} as IamInterface,
 	reducers: {
-		setQuemEuSou: (state, action: { payload }) => {
+		setQuemEuSou: (state, action: { payload: IamInterface }) => {
 			state._id = action.payload._id
 			state.content = action.payload.content
 			state.image.src = action.payload.image.src
