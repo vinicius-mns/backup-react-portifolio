@@ -5,8 +5,11 @@
   position: absolute;
   width: 60%;
   height: 95vh;
-  margin-top: 2.5vh;
+  top: 2.5vh;
+  margin-left: -15%;
+  opacity: 20%;
   @include flex(column);
+  @include form-mount(0, 0.5s);
 
   & .close {
     position: absolute;
