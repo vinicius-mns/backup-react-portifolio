@@ -27,27 +27,18 @@
 .container-content {
   @include flex(row);
   align-items: stretch;
-  margin-top: 2%;
   justify-content: space-between;
 
-  & .description {
-    text-align: justify;
+  & .mark {
     width: 69%;
-    & h1 {
-      font-size: 40px;
-      line-height: 30px;
-    }
-
-    & p {
-      margin-top: 3%;
-    }
-
     opacity: 0;
+    margin-top: 1%;
     margin-left: -10%;
-    @include slide-animation(0, 0.5s, 0.5s)
+    @include slide-animation(0, 0.5s, 0.5s);
   }
 
   & .stacks-link {
+    margin-top: 2%;
     width: 29%;
     @include flex(column);
 
