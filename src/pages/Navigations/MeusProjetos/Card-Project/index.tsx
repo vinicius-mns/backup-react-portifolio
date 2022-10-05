@@ -2,13 +2,17 @@ import React from 'react'
 import './style.scss'
 import { ProjectInterface } from '../../../../redux/slices/projetos'
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown'
+import { useDispatch } from 'react-redux'
+import { setModalDeleteProject } from '../../../../redux/slices/toggleComponents'
 
 const CardProject: React.FC<ProjectInterface> = ({image, description, site, repository, stacks, _id}) => {
+	const dispatch = useDispatch()
+
 	return (
 		<div className='project-card' id={_id}>
 			<div className='configButtons'>
 				<button>Edit</button>
-				<button>Delete</button>
+				<button onClick={() => dispatch(setModalDeleteProject())} >Delete</button>
 			</div>
 			<div className='container-img'>
 				<div><img src={image.src} alt={image.alt}/></div>
