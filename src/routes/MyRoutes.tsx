@@ -19,6 +19,7 @@ import { useEffect } from 'react'
 import { setQuemEuSou } from '../redux/slices/quemEuSou'
 import { useSelector } from 'react-redux'
 import { Store } from '../redux/store'
+import { setProjetos } from '../redux/slices/projetos'
 
 export default function MyRoutes() {
 	const dispatch = useDispatch()
@@ -26,7 +27,10 @@ export default function MyRoutes() {
 
 	useEffect(() => {
 		const iamAxios = new MyAxios('https://v-portifolio-backend.herokuapp.com/iam')
+		const projectsAxios = new MyAxios('https://v-portifolio-backend.herokuapp.com/project')
+
 		!state.quemEuSou._id && iamAxios.getOne().then(quemSou => dispatch(setQuemEuSou(quemSou)))
+		projectsAxios.getAll().then(projets => dispatch(setProjetos(projets)))
 
 		console.log(state)
 	}, [])
