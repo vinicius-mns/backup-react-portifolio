@@ -1,6 +1,6 @@
 import React from 'react'
 import './style.scss'
-import { ReactMarkdown } from 'react-markdown/lib/react-markdown'
+import ReactMarkdown from 'react-markdown'
 import { useDispatch } from 'react-redux'
 import { setModalDeleteProject } from '../../../../../redux/slices/toggleComponents'
 
