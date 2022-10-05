@@ -20,4 +20,8 @@ export default class MyAxios {
 	update = async (id: string, body: unknown) => {
 		return (await this.axios.put(`${this.path}/${id}`, body)).data
 	}
+
+	deleteOne = async (id: string) => {
+		return (await this.axios.delete(`${this.path}/${id}`)).data
+	}
 }
