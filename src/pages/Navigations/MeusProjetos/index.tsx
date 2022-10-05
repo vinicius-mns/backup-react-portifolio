@@ -1,15 +1,26 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
+import { Store } from '../../../redux/store'
 import CardProject from './Card-Project'
-import { AppCalorias as C } from './projects/appCalorias'
 import './style.scss'
 
 export default function MeusProjetos() {
+	const projects = useSelector((state: Store) => state.projetos)
 	return (
 		<div className='container-p'>
-			<CardProject title={C.title} image={C.image} text={C.text} repo={C.repo} site={C.site} stacks={C.stacks} />
-			<CardProject title={C.title} image={C.image} text={C.text} repo={C.repo} site={C.site} stacks={C.stacks} />
-			<CardProject title={C.title} image={C.image} text={C.text} repo={C.repo} site={C.site} stacks={C.stacks} />
-			<CardProject title={C.title} image={C.image} text={C.text} repo={C.repo} site={C.site} stacks={C.stacks} />
+			{
+				projects.map((project, index) =>
+					<CardProject 
+						key={index}
+						title={project.title}
+						image={project.image}
+						text={project.description}
+						repo={project.repository}
+						site={project.site}
+						stacks={project.stacks}
+					/>
+				)
+			}
 		</div>
 	)
 }
