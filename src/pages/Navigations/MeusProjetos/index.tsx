@@ -3,9 +3,12 @@ import { useSelector } from 'react-redux'
 import { Store } from '../../../redux/store'
 import CardProject from './Card-Project'
 import './style.scss'
+import ModalDeleteProject from './Card-Project/DeleteModal'
 
 export default function MeusProjetos() {
 	const projects = useSelector((state: Store) => state.projetos)
+	const toggle = useSelector((state: Store) => state.toggleComponents)
+
 	return (
 		<div className='container-p'>
 			{
@@ -21,6 +24,7 @@ export default function MeusProjetos() {
 					/>
 				)
 			}
+			{  toggle.modalDeleteProject && <ModalDeleteProject /> }
 		</div>
 	)
 }
