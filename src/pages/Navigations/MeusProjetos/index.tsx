@@ -14,8 +14,8 @@ export default function MeusProjetos() {
 						key={index}
 						title={project.title}
 						image={project.image}
-						text={project.description}
-						repo={project.repository}
+						description={project.description}
+						repository={project.repository}
 						site={project.site}
 						stacks={project.stacks}
 					/>

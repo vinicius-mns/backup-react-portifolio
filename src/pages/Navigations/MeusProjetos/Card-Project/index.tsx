@@ -1,26 +1,25 @@
-/* eslint-disable max-len */
 import React from 'react'
 import './style.scss'
-import { cardProject } from '../../../../types/ReacProps'
+import { ProjectInterface } from '../../../../redux/slices/projetos'
 
-const CardProject: React.FC<cardProject> = ({image, title, text, site, repo, stacks}) => {
+const CardProject: React.FC<ProjectInterface> = ({image, title, description, site, repository, stacks}) => {
 	return (
 		<div className='project-card'>
 			<div className='container-img'>
-				<div><img src={image.image} alt={image.desc}/></div>
+				<div><img src={image.src} alt={image.alt}/></div>
 			</div>
 			<div className='container-content'>
 				<div className='description'>
 					<h1>{title}</h1>
-					{text.map( ( paragrafo, i ) => <p key={i}>{paragrafo}</p> )}
+					<p>{description}</p>
 				</div>
 				<div className='stacks-link'>
 					<div className='link'>
 						{site && <a href={site} target='blak'>Site</a>}
-						{repo && <a href={repo} target='blak'>Repositório</a>}
+						{repository && <a href={repository} target='blak'>Repositório</a>}
 					</div>
 					<div className='stacks'>
-						{stacks.map( ( s, i ) => <div key={i}><img src={s.image} alt={s.desc}/></div> )}
+						{stacks.map( ( s, i ) => <div key={i}><img src={s.src} alt={s.alt}/></div> )}
 					</div>
 				</div>
 			</div>
