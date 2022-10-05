@@ -6,6 +6,10 @@ import { ReactMarkdown } from 'react-markdown/lib/react-markdown'
 const CardProject: React.FC<ProjectInterface> = ({image, description, site, repository, stacks, _id}) => {
 	return (
 		<div className='project-card' id={_id}>
+			<div className='configButtons'>
+				<button>Edit</button>
+				<button>Delete</button>
+			</div>
 			<div className='container-img'>
 				<div><img src={image.src} alt={image.alt}/></div>
 			</div>
