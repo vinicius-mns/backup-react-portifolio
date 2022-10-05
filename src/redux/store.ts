@@ -16,6 +16,7 @@ export type Store = {
 		sideBar: 'showSideBar' | '',
 		introCard: 'slideIntroCard' | '',
 		formQuemEuSou: boolean,
+		modalDeleteProject: boolean,
 	},
 	quemEuSou: IamInterface,
 	projetos: ProjectInterface[],
