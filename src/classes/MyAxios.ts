@@ -14,10 +14,10 @@ export default class MyAxios {
 	}
 
 	getAll = async () => {
-		return await (await this.axios.get(this.path)).data
+		return (await this.axios.get(this.path)).data
 	}
 
 	update = async (id: string, body: unknown) => {
-		return await (await this.axios.put(`${this.path}/${id}`, body)).data
+		return (await this.axios.put(`${this.path}/${id}`, body)).data
 	}
 }
