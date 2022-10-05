@@ -2,7 +2,7 @@ import React from 'react'
 import './style.scss'
 import { ProjectInterface } from '../../../../redux/slices/projetos'
 
-const CardProject: React.FC<ProjectInterface> = ({image, title, description, site, repository, stacks}) => {
+const CardProject: React.FC<ProjectInterface> = ({image, description, site, repository, stacks}) => {
 	return (
 		<div className='project-card'>
 			<div className='container-img'>
@@ -10,7 +10,6 @@ const CardProject: React.FC<ProjectInterface> = ({image, title, description, sit
 			</div>
 			<div className='container-content'>
 				<div className='description'>
-					<h1>{title}</h1>
 					<p>{description}</p>
 				</div>
 				<div className='stacks-link'>

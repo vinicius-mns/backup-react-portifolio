@@ -12,7 +12,6 @@ export default function MeusProjetos() {
 				projects.map((project, index) =>
 					<CardProject 
 						key={index}
-						title={project.title}
 						image={project.image}
 						description={project.description}
 						repository={project.repository}
