@@ -10,9 +10,7 @@ const CardProject: React.FC<ProjectInterface> = ({image, description, site, repo
 				<div><img src={image.src} alt={image.alt}/></div>
 			</div>
 			<div className='container-content'>
-				<div className='description'>
-					<ReactMarkdown>{description}</ReactMarkdown>
-				</div>
+				<ReactMarkdown className='mark'>{description}</ReactMarkdown>
 				<div className='stacks-link'>
 					<div className='link'>
 						{site && <a href={site} target='blak'>Site</a>}
