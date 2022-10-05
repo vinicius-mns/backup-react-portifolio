@@ -1,6 +1,7 @@
 import React from 'react'
 import './style.scss'
 import { ProjectInterface } from '../../../../redux/slices/projetos'
+import { ReactMarkdown } from 'react-markdown/lib/react-markdown'
 
 const CardProject: React.FC<ProjectInterface> = ({image, description, site, repository, stacks, _id}) => {
 	return (
@@ -10,7 +11,7 @@ const CardProject: React.FC<ProjectInterface> = ({image, description, site, repo
 			</div>
 			<div className='container-content'>
 				<div className='description'>
-					<p>{description}</p>
+					<ReactMarkdown>{description}</ReactMarkdown>
 				</div>
 				<div className='stacks-link'>
 					<div className='link'>
