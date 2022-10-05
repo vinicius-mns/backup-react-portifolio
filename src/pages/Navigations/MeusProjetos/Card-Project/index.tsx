@@ -2,9 +2,9 @@ import React from 'react'
 import './style.scss'
 import { ProjectInterface } from '../../../../redux/slices/projetos'
 
-const CardProject: React.FC<ProjectInterface> = ({image, description, site, repository, stacks}) => {
+const CardProject: React.FC<ProjectInterface> = ({image, description, site, repository, stacks, _id}) => {
 	return (
-		<div className='project-card'>
+		<div className='project-card' id={_id}>
 			<div className='container-img'>
 				<div><img src={image.src} alt={image.alt}/></div>
 			</div>

@@ -10,7 +10,8 @@ export default function MeusProjetos() {
 		<div className='container-p'>
 			{
 				projects.map((project, index) =>
-					<CardProject 
+					<CardProject
+						_id={project._id}
 						key={index}
 						image={project.image}
 						description={project.description}

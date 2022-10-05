@@ -1,6 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 export interface ProjectInterface {
+	_id: string,
 	image: { src: string, alt: string },
   description: string,
   repository: string,
@@ -12,6 +13,7 @@ const projetos = createSlice({
 	name: 'projetos',
 	initialState: [
 		{
+			_id: '',
 			image: {src: '', alt: ''},
 			description: '',
 			repository: '',
