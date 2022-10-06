@@ -3,7 +3,7 @@ import './style.scss'
 import image from '../../../midia'
 import Contacts from '../../../components/contacts'
 import { useDispatch, useSelector } from 'react-redux'
-import { SideBar, slideIntroCard, toggleLogin } from '../../../redux/slices/toggleComponents'
+import { SideBar, slideIntroCard } from '../../../redux/slices/toggleComponents'
 import { Store } from '../../../redux/store'
 import Login from '../../Users/Login'
 
@@ -20,7 +20,6 @@ const Intro = () => {
 
 	return(
 		<div className={`intro ${toggleState.introCard}`}>
-			<button className='login' onClick={() => dispatch(toggleLogin())}>?</button>
 			<div className='container_img' >
 				<img className='avatarx' src={image.saudacao} alt='boneco modelo 3d' />
 			</div>

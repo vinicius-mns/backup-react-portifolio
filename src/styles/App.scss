@@ -5,6 +5,19 @@
   padding: 0;
 }
 
+.login {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  color: white;
+  background-color: black;
+  border: none;
+  right: 20px;
+  top: 20px;
+  font-size: 20px;
+}
+
 body {
   background-color: $main_color;
 
