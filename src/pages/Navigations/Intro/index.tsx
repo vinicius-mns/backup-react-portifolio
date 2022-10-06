@@ -19,6 +19,7 @@ const Intro = () => {
 
 	return(
 		<div className={`intro ${slideCard}`}>
+			<button className='login'>?</button>
 			<div className='container_img' >
 				<img className='avatarx' src={image.saudacao} alt='boneco modelo 3d' />
 			</div>
