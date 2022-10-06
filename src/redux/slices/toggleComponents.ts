@@ -26,7 +26,7 @@ const toggleComponents = createSlice({
 				state.modalDeleteProject = false :
 				state.modalDeleteProject = true
 		},
-		togglerLogin: (state) => {
+		toggleLogin: (state) => {
 			state.login === true ?
 				state.login = false :
 				state.login = true
@@ -39,7 +39,7 @@ export const {
 	slideIntroCard,
 	setFormQuemEuSou,
 	setModalDeleteProject,
-	togglerLogin,
+	toggleLogin,
 } = toggleComponents.actions
 
 export default toggleComponents
