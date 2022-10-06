@@ -7,6 +7,7 @@ const toggleComponents = createSlice({
 		introCard: '',
 		formQuemEuSou: false,
 		modalDeleteProject: false,
+		login: false,
 	},
 	reducers: {
 		SideBar: (state, action: { payload: '' | 'showSideBar' }) => {
@@ -24,10 +25,21 @@ const toggleComponents = createSlice({
 			state.modalDeleteProject === true ?
 				state.modalDeleteProject = false :
 				state.modalDeleteProject = true
-		}
+		},
+		togglerLogin: (state) => {
+			state.login === true ?
+				state.login = false :
+				state.login = true
+		},
 	}
 })
 
-export const { SideBar, slideIntroCard, setFormQuemEuSou, setModalDeleteProject } = toggleComponents.actions
+export const { 
+	SideBar,
+	slideIntroCard,
+	setFormQuemEuSou,
+	setModalDeleteProject,
+	togglerLogin,
+} = toggleComponents.actions
 
 export default toggleComponents

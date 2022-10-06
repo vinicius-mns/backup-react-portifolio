@@ -17,6 +17,7 @@ export type Store = {
 		introCard: 'slideIntroCard' | '',
 		formQuemEuSou: boolean,
 		modalDeleteProject: boolean,
+		login: boolean,
 	},
 	quemEuSou: IamInterface,
 	projetos: ProjectInterface[],
