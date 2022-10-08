@@ -10,6 +10,7 @@ const Login = () => {
 				<input type="password" placeholder='Senha' />
 			</div>
 			<button className='teste'>Logar</button>
+			<button>Adm login</button>
 		</main>
 	)
 }

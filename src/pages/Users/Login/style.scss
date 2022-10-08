@@ -1,13 +1,12 @@
 @import 'src/styles/main';
 
 main {
+  z-index: 200;
   @include flex(column_center);
-  top: 0;
-  padding: 20px;
-  position: absolute;
   background-color: $back-color;
-  width: 60%;
-  height: 89vh;
+  position: fixed;
+  top: 20px;
+  right: 70px;
   
   & div {
     width: 100%;
