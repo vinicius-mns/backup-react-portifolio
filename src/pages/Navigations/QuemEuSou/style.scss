@@ -26,6 +26,22 @@
     position: absolute;
     bottom: 0;
   }
+
+  & .loading {
+    margin-top: 32vh;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 10px solid white;
+    border-top-color: black;
+    animation: loading 1s infinite linear;
+  }
+}
+
+@keyframes loading {
+  to {
+    transform: rotate(1turn);
+  }
 }
 
 .container_text {

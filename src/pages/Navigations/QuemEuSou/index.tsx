@@ -11,8 +11,14 @@ import { setFormQuemEuSou } from '../../../redux/slices/toggleComponents'
 
 const QuemSouEu: React.FC<oQueEuSei> = () => {
 	const iam = useSelector((state: Store) => state.quemEuSou)
-	const switchModel = useSelector((state: Store) => state.toggleComponents.formQuemEuSou)
+	const toggle = useSelector((state: Store) => state.toggleComponents)
 	const dispatch = useDispatch()
+
+	if(!iam.content) {
+		return (
+			<div className='container_qes'><div className='loading' /></div>
+		)
+	}
 
 	return(
 		<div className='container_qes'>
@@ -23,8 +29,11 @@ const QuemSouEu: React.FC<oQueEuSei> = () => {
 				<ReactMarkdown className='mark'>{ iam.content }</ReactMarkdown>
 			</div>
 			<Contacts resolve='inApp' />
-			<button className='switch' onClick={() => dispatch(setFormQuemEuSou())}>Editar</button>
-			{ switchModel && <EditCard /> }
+			{
+				toggle.login && 
+				<button className='switch' onClick={() => dispatch(setFormQuemEuSou())}>Editar</button>
+			}
+			{ toggle.formQuemEuSou && <EditCard /> }
 		</div>
 	)
 }

@@ -1,4 +1,4 @@
-/* eslint-disable react/react-in-jsx-scope */
+import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import myPath from './myPaths'
 
