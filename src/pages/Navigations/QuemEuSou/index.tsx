@@ -14,6 +14,12 @@ const QuemSouEu: React.FC<oQueEuSei> = () => {
 	const toggle = useSelector((state: Store) => state.toggleComponents)
 	const dispatch = useDispatch()
 
+	if(!iam.content) {
+		return (
+			<div className='container_qes'><div className='loading' /></div>
+		)
+	}
+
 	return(
 		<div className='container_qes'>
 			<div className='container_img'>
